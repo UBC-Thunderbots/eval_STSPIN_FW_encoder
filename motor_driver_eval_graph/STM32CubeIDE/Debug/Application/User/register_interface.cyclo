@@ -1,0 +1,7 @@
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:1141:9:RI_MovString	3
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:32:9:RI_SetRegisterGlobal	13
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:166:9:RI_SetRegisterMotor1	61
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:523:9:RI_GetRegisterGlobal	14
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:668:11:RI_GetRegisterMotor1	77
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:1167:9:RI_GetIDSize	2
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/register_interface.c:1202:16:RI_GetPtrReg	19

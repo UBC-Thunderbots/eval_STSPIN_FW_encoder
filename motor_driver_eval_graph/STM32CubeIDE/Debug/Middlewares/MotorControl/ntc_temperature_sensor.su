@@ -1,0 +1,7 @@
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:69:17:NTC_SetFaultState	0	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:135:13:NTC_Clear	0	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:106:13:NTC_Init	8	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:158:17:NTC_CalcAvTemp	8	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:209:17:NTC_GetAvTemp_d	0	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:225:16:NTC_GetAvTemp_C	0	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:271:17:NTC_CheckTemp	0	static

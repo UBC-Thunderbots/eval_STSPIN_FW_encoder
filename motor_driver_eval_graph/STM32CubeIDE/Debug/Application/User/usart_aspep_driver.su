@@ -1,0 +1,6 @@
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/usart_aspep_driver.c:55:6:UASPEP_DAMCONFIG_TX	12	static,ignoring_inline_asm
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/usart_aspep_driver.c:91:6:UASPEP_DAMCONFIG_RX	12	static,ignoring_inline_asm
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/usart_aspep_driver.c:43:6:UASPEP_INIT	8	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/usart_aspep_driver.c:126:6:UASPEP_SEND_PACKET	12	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/usart_aspep_driver.c:152:6:UASPEP_RECEIVE_BUFFER	8	static
+C:/Users/baolo/OneDrive - UBC/UBC 2023 - Term 1 2/UBC Thunderbots/Motor Driver-Firmware/motor_driver_eval_graph/Src/usart_aspep_driver.c:168:6:UASPEP_IDLE_ENABLE	0	static,ignoring_inline_asm
