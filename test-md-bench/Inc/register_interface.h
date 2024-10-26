@@ -255,6 +255,8 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t * data, uin
 
 uint8_t RI_GetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t * data, uint16_t *size, int16_t freeSpace);
 
+uint8_t RI_MovString(const char_t * srcString, char_t * destString, uint16_t *size, int16_t maxSize);
+
 uint8_t RI_GetPtrReg(uint16_t dataID, void **dataPtr);
 uint8_t RI_GetIDSize(uint16_t dataID);
 

@@ -182,7 +182,7 @@
 /**********  ENCODER TIMER MOTOR 1 *************/
 #define M1_PULSE_NBR                        ((4 * (M1_ENCODER_PPR)) - 1)
 #define M1_ENC_IC_FILTER_LL LL_TIM_IC_FILTER_FDIV8_N6
-#define M1_ENC_IC_FILTER   8
+#define M1_ENC_IC_FILTER   LL_TIM_IC_FILTER_FDIV8_N6
 #define SPD_TIM_M1_IRQHandler               TIM2_IRQHandler
 
 #define LPF_FILT_CONST                      ((int16_t)(32767 * 0.5))

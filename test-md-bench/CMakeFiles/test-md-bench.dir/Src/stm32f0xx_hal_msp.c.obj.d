@@ -28,18 +28,12 @@ CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.obj: \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc_ex.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/motorcontrol.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/mc_config.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
@@ -89,4 +83,9 @@ CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.obj: \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/pmsm_motor_parameters.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/drive_parameters.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/power_stage_parameters.h \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/mc_api.h
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/mc_api.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_crs.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_exti.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_cortex.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_utils.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_pwr.h

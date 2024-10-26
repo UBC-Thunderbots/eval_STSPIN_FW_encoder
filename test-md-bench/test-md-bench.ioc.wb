@@ -975,7 +975,7 @@ MotorControl.HWV_CS=SingleShunt_AmplifiedCurrents
 MotorControl.HWV_OCP=SingleInput_RawCurrents_Protection_IntRef
 MotorControl.HWV_PWM=PoweringHighAndLowSides
 MotorControl.IPs=NVIC,RCC,SYS,MotorControl,TIM1,ADC,TIM2,USART1,DMA
-MotorControl.LOW_MEMORY_FOOTPRINT_REG=true
+MotorControl.LOW_MEMORY_FOOTPRINT_REG=false
 MotorControl.LOW_SIDE_IDLE_STATE=false
 MotorControl.LOW_SIDE_SIGNALS_ENABLING=LS_PWM_TIMER
 MotorControl.M1_ALIGNMENT_ANGLE_DEG=90
@@ -1220,17 +1220,17 @@ MotorControl.WB_UI_VPOL=1.65
 
 
 ########################################################################################################################
-# DRIVER management - HAL                                                                                              #
+# DRIVER management - LL                                                                                               #
 ########################################################################################################################
-# ProjectManager.functionlistsort=\                                                                                    #
-# 1-MX_GPIO_Init-GPIO-false-HAL-true,\                                                                                 #
-# 2-SystemClock_Config-RCC-false-HAL-false,\                                                                           #
-# 3-MX_DMA_Init-DMA-false-HAL-true,\                                                                                   #
-# 4-MX_ADC_Init-ADC-false-HAL-true,\                                                                                   #
-# 5-MX_TIM1_Init-TIM1-false-HAL-true,\                                                                                 #
-# 6-MX_TIM2_Init-TIM2-false-HAL-true,\                                                                                 #
-# 7-MX_USART1_UART_Init-USART1-false-HAL-true,\                                                                        #
-# 8-MX_MotorControl_Init-MotorControl-false-HAL-true                                                                   #
+ProjectManager.functionlistsort=\
+1-MX_GPIO_Init-GPIO-false-LL-true,\
+2-SystemClock_Config-RCC-false-LL-false,\
+3-MX_DMA_Init-DMA-false-LL-true,\
+4-MX_ADC_Init-ADC-false-LL-true,\
+5-MX_TIM1_Init-TIM1-false-LL-true,\
+6-MX_TIM2_Init-TIM2-false-LL-true,\
+7-MX_USART1_UART_Init-USART1-false-LL-true,\
+8-MX_MotorControl_Init-MotorControl-false-HAL-true
 ########################################################################################################################
 
 Mcu.UserConstants=

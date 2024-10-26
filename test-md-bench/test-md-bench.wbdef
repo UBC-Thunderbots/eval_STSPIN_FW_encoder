@@ -51,7 +51,7 @@
         <define key="HWV_CS" value="SingleShunt_AmplifiedCurrents" />
         <define key="HWV_OCP" value="SingleInput_RawCurrents_Protection_IntRef" />
         <define key="HWV_PWM" value="PoweringHighAndLowSides" />
-        <define key="LOW_MEMORY_FOOTPRINT_REG" value="TRUE" />
+        <define key="LOW_MEMORY_FOOTPRINT_REG" value="FALSE" />
         <define key="LOW_SIDE_IDLE_STATE" value="TURN_OFF" />
         <define key="LOW_SIDE_SIGNALS_ENABLING" value="LS_PWM_TIMER" />
         <define key="M1_ALIGNMENT_ANGLE_DEG" value="90" />

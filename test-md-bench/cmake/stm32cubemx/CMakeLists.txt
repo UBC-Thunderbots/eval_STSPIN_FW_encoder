@@ -8,6 +8,7 @@ enable_language(C ASM)
 
 target_compile_definitions(stm32cubemx INTERFACE 
 	ARM_MATH_CM0 
+	USE_FULL_LL_DRIVER 
 	USE_HAL_DRIVER 
 	STM32F031x6
     $<$<CONFIG:Debug>:DEBUG>
@@ -49,8 +50,12 @@ target_sources(stm32cubemx INTERFACE
     ../../Src/mc_app_hooks.c
     ../../Src/stm32f0xx_it.c
     ../../Src/stm32f0xx_hal_msp.c
-    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c
-    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c
     ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c
     ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c
     ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c
@@ -66,8 +71,8 @@ target_sources(stm32cubemx INTERFACE
     ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c
     ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c
     ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c
-    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c
-    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c
+    ../../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c
     ../../Src/system_stm32f0xx.c
     ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c
     ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c

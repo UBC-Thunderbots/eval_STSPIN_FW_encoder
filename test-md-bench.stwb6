@@ -1294,6 +1294,17 @@
             "enabled": false
           }
         }
+      },
+      "applicationConfig": {
+        "freeRTOS": {
+          "enabled": false
+        },
+        "dacDebug": {
+          "enabled": false
+        },
+        "lowMemoryFootprintReg": false,
+        "motorProfiler": false,
+        "dbgMcuLoadMeasure": false
       }
     }
   }

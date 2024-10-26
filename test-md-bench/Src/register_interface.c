@@ -102,6 +102,17 @@ uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint
       break;
     }
 
+    case TYPE_DATA_STRING:
+    {
+      const char_t *charData = (const char_t *)data;
+      char_t *dummy = (char_t *)data;
+      retVal = MCP_ERROR_RO_REG;
+      /* Used to compute String length stored in RXBUFF even if Reg does not exist */
+      /* It allows to jump to the next command in the buffer */
+      (void)RI_MovString(charData, dummy, size, dataAvailable);
+      break;
+    }
+
     case TYPE_DATA_RAW:
     {
       uint16_t rawSize = *(uint16_t *)data; //cstat !MISRAC2012-Rule-11.3
@@ -123,6 +134,7 @@ uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         switch (regID)
         {
           case MC_REG_APPLICATION_CONFIG:
+          case MC_REG_MOTOR_CONFIG:
           case MC_REG_GLOBAL_CONFIG:
           case MC_REG_FOCFW_CONFIG:
           {
@@ -226,6 +238,42 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
           break;
         }
 
+        case MC_REG_I_Q_KP:
+        {
+          PID_SetKP(&PIDIqHandle_M1, (int16_t)regdata16);
+          break;
+        }
+
+        case MC_REG_I_Q_KI:
+        {
+          PID_SetKI(&PIDIqHandle_M1, (int16_t)regdata16);
+          break;
+        }
+
+        case MC_REG_I_Q_KD:
+        {
+          PID_SetKD(&PIDIqHandle_M1, (int16_t)regdata16);
+          break;
+        }
+
+        case MC_REG_I_D_KP:
+        {
+          PID_SetKP(&PIDIdHandle_M1, (int16_t)regdata16);
+          break;
+        }
+
+        case MC_REG_I_D_KI:
+        {
+          PID_SetKI(&PIDIdHandle_M1, (int16_t)regdata16);
+          break;
+        }
+
+        case MC_REG_I_D_KD:
+        {
+          PID_SetKD(&PIDIdHandle_M1, (int16_t)regdata16);
+          break;
+        }
+
         case MC_REG_BUS_VOLTAGE:
         case MC_REG_HEATS_TEMP:
         case MC_REG_MOTOR_POWER:
@@ -234,9 +282,33 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
           break;
         }
 
+        case MC_REG_I_A:
+        case MC_REG_I_B:
+        case MC_REG_I_ALPHA_MEAS:
+        case MC_REG_I_BETA_MEAS:
+        case MC_REG_I_Q_MEAS:
+        case MC_REG_I_D_MEAS:
         case MC_REG_FLUXWK_BUS_MEAS:
         {
           retVal = MCP_ERROR_RO_REG;
+          break;
+        }
+
+        case MC_REG_I_Q_REF:
+        {
+          qd_t currComp;
+          currComp = MCI_GetIqdref(pMCIN);
+          currComp.q = (int16_t)regdata16;
+          MCI_SetCurrentReferences(pMCIN,currComp);
+          break;
+        }
+
+        case MC_REG_I_D_REF:
+        {
+          qd_t currComp;
+          currComp = MCI_GetIqdref(pMCIN);
+          currComp.d = (int16_t)regdata16;
+          MCI_SetCurrentReferences(pMCIN,currComp);
           break;
         }
 
@@ -254,6 +326,60 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         case MC_REG_DAC_USER1:
         case MC_REG_DAC_USER2:
           break;
+
+        case MC_REG_SPEED_KP_DIV:
+        {
+          PID_SetKPDivisorPOW2(&PIDSpeedHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_SPEED_KI_DIV:
+        {
+          PID_SetKIDivisorPOW2(&PIDSpeedHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_SPEED_KD_DIV:
+        {
+          PID_SetKDDivisorPOW2(&PIDSpeedHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_I_D_KP_DIV:
+        {
+          PID_SetKPDivisorPOW2(&PIDIdHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_I_D_KI_DIV:
+        {
+          PID_SetKIDivisorPOW2(&PIDIdHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_I_D_KD_DIV:
+        {
+          PID_SetKDDivisorPOW2(&PIDIdHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_I_Q_KP_DIV:
+        {
+          PID_SetKPDivisorPOW2(&PIDIqHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_I_Q_KI_DIV:
+        {
+          PID_SetKIDivisorPOW2(&PIDIqHandle_M1, regdata16);
+          break;
+        }
+
+        case MC_REG_I_Q_KD_DIV:
+        {
+          PID_SetKDDivisorPOW2(&PIDIqHandle_M1, regdata16);
+          break;
+        }
 
         default:
         {
@@ -294,6 +420,17 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
       break;
     }
 
+    case TYPE_DATA_STRING:
+    {
+      const char_t *charData = (const char_t *)data;
+      char_t *dummy = (char_t *)data;
+      retVal = MCP_ERROR_RO_REG;
+      /* Used to compute String length stored in RXBUFF even if Reg does not exist */
+      /* It allows to jump to the next command in the buffer */
+      (void)RI_MovString(charData, dummy, size, dataAvailable);
+      break;
+    }
+
     case TYPE_DATA_RAW:
     {
       uint16_t rawSize = *(uint16_t *)data; //cstat !MISRAC2012-Rule-11.3
@@ -315,6 +452,7 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
         switch (regID)
         {
           case MC_REG_APPLICATION_CONFIG:
+          case MC_REG_MOTOR_CONFIG:
           case MC_REG_GLOBAL_CONFIG:
           case MC_REG_FOCFW_CONFIG:
           {
@@ -331,6 +469,34 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
             rpm = (((int32_t)(*(int16_t *)&rawData[2])) << 16) | *(uint16_t *)rawData; //cstat !MISRAC2012-Rule-11.3
             duration = *(uint16_t *)&rawData[4]; //cstat !MISRAC2012-Rule-11.3
             MCI_ExecSpeedRamp(pMCIN, (int16_t)((rpm * SPEED_UNIT) / U_RPM), duration);
+            break;
+          }
+
+          case MC_REG_TORQUE_RAMP:
+          {
+            uint32_t torque;
+            uint16_t duration;
+
+            /* 32 bits access are splited into 2x16 bits access */
+            //cstat !MISRAC2012-Rule-11.3
+            torque = ((uint32_t)(*(int16_t *)&rawData[2]))<<16 | *(uint16_t *)rawData;
+            duration = *(uint16_t *)&rawData[4]; //cstat !MISRAC2012-Rule-11.3
+            MCI_ExecTorqueRamp(pMCIN, (int16_t)torque, duration);
+            break;
+          }
+
+          case MC_REG_CURRENT_REF:
+          {
+            qd_t currComp;
+            currComp.q = *((int16_t *) rawData); //cstat !MISRAC2012-Rule-11.3
+            currComp.d = *((int16_t *) &rawData[2]); //cstat !MISRAC2012-Rule-11.3
+            MCI_SetCurrentReferences(pMCIN, currComp);
+            break;
+          }
+
+          case MC_REG_ASYNC_UARTA:
+          {
+            retVal =  MCPA_cfgLog (&MCPA_UART_A, rawData);
             break;
           }
 
@@ -428,8 +594,18 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
 
       case TYPE_DATA_STRING:
       {
+        char_t *charData = (char_t *)data;
         switch (regID)
         {
+          case MC_REG_FW_NAME:
+            retVal = RI_MovString (FIRMWARE_NAME ,charData, size, freeSpace);
+            break;
+
+          case MC_REG_CTRL_STAGE_NAME:
+          {
+            retVal = RI_MovString (CTL_BOARD ,charData, size, freeSpace);
+            break;
+          }
           default:
           {
 
@@ -556,6 +732,42 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
               break;
             }
 
+            case MC_REG_I_Q_KP:
+            {
+              *regdata16 = PID_GetKP(&PIDIqHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_Q_KI:
+            {
+              *regdata16 = PID_GetKI(&PIDIqHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_Q_KD:
+            {
+              *regdata16 = PID_GetKD(&PIDIqHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_D_KP:
+            {
+              *regdata16 = PID_GetKP(&PIDIdHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_D_KI:
+            {
+              *regdata16 = PID_GetKI(&PIDIdHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_D_KD:
+            {
+              *regdata16 = PID_GetKD(&PIDIdHandle_M1);
+              break;
+            }
+
             case MC_REG_BUS_VOLTAGE:
             {
               *regdataU16 = VBS_GetAvBusVoltage_V(BusVoltageSensor);
@@ -565,6 +777,54 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             case MC_REG_HEATS_TEMP:
             {
               *regdata16 = NTC_GetAvTemp_C(&TempSensor_M1);
+              break;
+            }
+
+            case MC_REG_I_A:
+            {
+              *regdata16 = MCI_GetIab(pMCIN).a;
+              break;
+            }
+
+            case MC_REG_I_B:
+            {
+              *regdata16 = MCI_GetIab(pMCIN).b;
+              break;
+            }
+
+            case MC_REG_I_ALPHA_MEAS:
+            {
+              *regdata16 = MCI_GetIalphabeta(pMCIN).alpha;
+              break;
+            }
+
+            case MC_REG_I_BETA_MEAS:
+            {
+              *regdata16 = MCI_GetIalphabeta(pMCIN).beta;
+              break;
+            }
+
+            case MC_REG_I_Q_MEAS:
+            {
+              *regdata16 = MCI_GetIqd(pMCIN).q;
+              break;
+            }
+
+            case MC_REG_I_D_MEAS:
+            {
+              *regdata16 = MCI_GetIqd(pMCIN).d;
+              break;
+            }
+
+            case MC_REG_I_Q_REF:
+            {
+              *regdata16 = MCI_GetIqdref(pMCIN).q;
+              break;
+            }
+
+            case MC_REG_I_D_REF:
+            {
+              *regdata16 = MCI_GetIqdref(pMCIN).d;
               break;
             }
 
@@ -607,6 +867,59 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             case MC_REG_DAC_USER1:
             case MC_REG_DAC_USER2:
               break;
+
+            case MC_REG_SPEED_KP_DIV:
+            {
+              *regdataU16 = (uint16_t)PID_GetKPDivisorPOW2(&PIDSpeedHandle_M1);
+              break;
+            }
+
+            case MC_REG_SPEED_KI_DIV:
+            {
+              *regdataU16 = (uint16_t)PID_GetKIDivisorPOW2(&PIDSpeedHandle_M1);
+              break;
+            }
+
+            case MC_REG_SPEED_KD_DIV:
+            {
+              *regdataU16 = PID_GetKDDivisorPOW2(&PIDSpeedHandle_M1);
+              break;
+            }
+            case MC_REG_I_D_KP_DIV:
+            {
+              *regdataU16 = PID_GetKPDivisorPOW2(&PIDIdHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_D_KI_DIV:
+            {
+              *regdataU16 = PID_GetKIDivisorPOW2(&PIDIdHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_D_KD_DIV:
+            {
+              *regdataU16 = PID_GetKDDivisorPOW2(&PIDIdHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_Q_KP_DIV:
+            {
+              *regdataU16 = PID_GetKPDivisorPOW2(&PIDIqHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_Q_KI_DIV:
+            {
+              *regdataU16 = PID_GetKIDivisorPOW2(&PIDIqHandle_M1);
+              break;
+            }
+
+            case MC_REG_I_Q_KD_DIV:
+            {
+              *regdataU16 = PID_GetKDDivisorPOW2(&PIDIqHandle_M1);
+              break;
+            }
 
             default:
             {
@@ -674,8 +987,20 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
 
       case TYPE_DATA_STRING:
       {
+        char_t *charData = (char_t *)data;
         switch (regID)
         {
+          case MC_REG_PWR_STAGE_NAME:
+          {
+            retVal = RI_MovString (PWR_BOARD_NAME[motorID], charData, size, freeSpace);
+            break;
+          }
+
+          case MC_REG_MOTOR_NAME:
+          {
+            retVal = RI_MovString (MotorConfig_reg[motorID]->name ,charData, size, freeSpace);
+            break;
+          }
 
           default:
           {
@@ -708,6 +1033,21 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             {
               ApplicationConfig_reg_t const *pApplicationConfig_reg = ApplicationConfig_reg[motorID];
               (void)memcpy(rawData, (const uint8_t *)pApplicationConfig_reg, sizeof(ApplicationConfig_reg_t));
+            }
+            break;
+          }
+
+          case MC_REG_MOTOR_CONFIG:
+          {
+            *rawSize = (uint16_t)sizeof(MotorConfig_reg_t);
+            if (((*rawSize) + 2U) > (uint16_t)freeSpace)
+            {
+              retVal = MCP_ERROR_NO_TXSYNC_SPACE;
+            }
+            else
+            {
+              MotorConfig_reg_t const *pMotorConfig_reg = MotorConfig_reg[motorID];
+              (void)memcpy(rawData, (const uint8_t *)pMotorConfig_reg, sizeof(MotorConfig_reg_t));
             }
             break;
           }
@@ -752,6 +1092,28 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
             break;
           }
 
+          case MC_REG_TORQUE_RAMP:
+          {
+            int16_t *torque = (int16_t *)rawData; //cstat !MISRAC2012-Rule-11.3
+            uint16_t *duration = (uint16_t *)&rawData[2]; //cstat !MISRAC2012-Rule-11.3
+
+            *rawSize = 4;
+            *torque = MCI_GetLastRampFinalTorque(pMCIN);
+            *duration = MCI_GetLastRampFinalDuration(pMCIN) ;
+            break;
+          }
+
+          case MC_REG_CURRENT_REF:
+          {
+            uint16_t *iqref = (uint16_t *)rawData; //cstat !MISRAC2012-Rule-11.3
+            uint16_t *idref = (uint16_t *)&rawData[2]; //cstat !MISRAC2012-Rule-11.3
+
+            *rawSize = 4;
+            *iqref = (uint16_t)MCI_GetIqdref(pMCIN).q;
+            *idref = (uint16_t)MCI_GetIqdref(pMCIN).d;
+            break;
+          }
+
           case MC_REG_ASYNC_UARTA:
           case MC_REG_ASYNC_UARTB:
           case MC_REG_ASYNC_STLNK:
@@ -775,6 +1137,32 @@ uint8_t RI_GetRegisterGlobal(uint16_t regID,uint8_t typeID,uint8_t * data,uint16
     }
     return (retVal);
   }
+
+uint8_t RI_MovString(const char_t *srcString, char_t *destString, uint16_t *size, int16_t maxSize)
+{
+  uint8_t retVal = MCP_CMD_OK;
+  const char_t *tempsrcString = srcString;
+  char_t *tempdestString = destString;
+  *size= 1U ; /* /0 is the min String size */
+
+  while ((*tempsrcString != (char_t)0) && (*size < (uint16_t)maxSize))
+  {
+    *tempdestString = *tempsrcString;
+    tempdestString++;
+    tempsrcString++;
+    *size = *size + 1U;
+  }
+
+  if (*tempsrcString != (char_t)0)
+  { /* Last string char must be 0 */
+    retVal = MCP_ERROR_STRING_FORMAT;
+  }
+  else
+  {
+    *tempdestString = (int8_t)0;
+  }
+  return (retVal);
+}
 
 uint8_t RI_GetIDSize(uint16_t dataID)
 {
@@ -836,6 +1224,53 @@ __weak uint8_t RI_GetPtrReg(uint16_t dataID, void **dataPtr)
       {
         switch (regID)
         {
+          case MC_REG_I_A:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Iab.a);
+             break;
+          }
+
+          case MC_REG_I_B:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Iab.b);
+            break;
+          }
+
+          case MC_REG_I_ALPHA_MEAS:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Ialphabeta.alpha);
+            break;
+          }
+
+          case MC_REG_I_BETA_MEAS:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Ialphabeta.beta);
+            break;
+          }
+
+          case MC_REG_I_Q_MEAS:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Iqd.q);
+            break;
+          }
+
+          case MC_REG_I_D_MEAS:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Iqd.d);
+            break;
+          }
+
+          case MC_REG_I_Q_REF:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Iqdref.q);
+            break;
+          }
+
+          case MC_REG_I_D_REF:
+          {
+            *dataPtr = &(pMCIN->pFOCVars->Iqdref.d);
+            break;
+          }
 
           case MC_REG_V_Q:
           {

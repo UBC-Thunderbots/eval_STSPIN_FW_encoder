@@ -419,38 +419,94 @@ CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.s"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/stm32f0xx_hal_msp.c -o CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.s
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj: CMakeFiles/test-md-bench.dir/flags.make
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.i
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.i
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.s
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.s
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.i
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.i
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.s
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.s
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.i
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.s
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.i
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.s
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.i
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.s
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.i
+
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.s
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.i: cmake_force
@@ -464,7 +520,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.i: cmake_force
@@ -478,7 +534,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.i: cmake_force
@@ -492,7 +548,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.s:
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c.i: cmake_force
@@ -506,7 +562,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c.i: cmake_force
@@ -520,7 +576,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c.i: cmake_force
@@ -534,7 +590,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c.i: cmake_force
@@ -548,7 +604,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c.i: cmake_force
@@ -562,7 +618,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cort
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c.i: cmake_force
@@ -576,7 +632,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c.i: cmake_force
@@ -590,7 +646,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c.i: cmake_force
@@ -604,7 +660,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flas
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c.i: cmake_force
@@ -618,7 +674,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flas
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.i: cmake_force
@@ -632,7 +688,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.i: cmake_force
@@ -646,7 +702,7 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c
 
 CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.i: cmake_force
@@ -657,38 +713,38 @@ CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.s"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.s
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj: CMakeFiles/test-md-bench.dir/flags.make
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.i
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.i
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.s
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.s
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj: CMakeFiles/test-md-bench.dir/flags.make
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj: Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj -MF CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj.d -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.i
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c > CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.i
 
-CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.s
+CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c -o CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.s
 
 CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj: Src/system_stm32f0xx.c
 CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj -MF CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj.d -o CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/system_stm32f0xx.c
 
 CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.i: cmake_force
@@ -702,7 +758,7 @@ CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.s: cmake_force
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.i: cmake_force
@@ -716,7 +772,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.i: cmake_force
@@ -730,7 +786,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/digital_output.c.i: cmake_force
@@ -744,7 +800,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.i: cmake_force
@@ -758,7 +814,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.i: cmake_force
@@ -772,7 +828,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.i: cmake_force
@@ -786,7 +842,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.i: cmake_force
@@ -800,7 +856,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c.i: cmake_force
@@ -814,7 +870,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c.i: cmake_force
@@ -828,7 +884,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c.i: cmake_force
@@ -842,7 +898,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c.i: cmake_force
@@ -856,7 +912,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c.i: cmake_force
@@ -870,7 +926,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.i: cmake_force
@@ -884,7 +940,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.i: cmake_force
@@ -898,7 +954,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.i: cmake_force
@@ -912,7 +968,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c
 
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i: cmake_force
@@ -926,7 +982,7 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj: Src/sysmem.c
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj -MF CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj.d -o CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/sysmem.c
 
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.i: cmake_force
@@ -940,7 +996,7 @@ CMakeFiles/test-md-bench.dir/Src/sysmem.c.s: cmake_force
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: Src/syscalls.c
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj -MF CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj.d -o CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/syscalls.c
 
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.i: cmake_force
@@ -953,7 +1009,7 @@ CMakeFiles/test-md-bench.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj: startup_stm32f031x6.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building ASM object CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building ASM object CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/startup_stm32f031x6.s
 
 CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.i: cmake_force
@@ -991,8 +1047,12 @@ test__md__bench_OBJECTS = \
 "CMakeFiles/test-md-bench.dir/Src/mc_app_hooks.c.obj" \
 "CMakeFiles/test-md-bench.dir/Src/stm32f0xx_it.c.obj" \
 "CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.obj" \
-"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj" \
-"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj" \
 "CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj" \
 "CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj" \
@@ -1008,8 +1068,8 @@ test__md__bench_OBJECTS = \
 "CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj" \
 "CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj" \
 "CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj" \
-"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj" \
-"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj" \
+"CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj" \
 "CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj" \
 "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj" \
 "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj" \
@@ -1059,8 +1119,12 @@ test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/aspep.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/mc_app_hooks.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/stm32f0xx_it.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/stm32f0xx_hal_msp.c.obj
-test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c.obj
-test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_gpio.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_adc.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_dma.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_rcc.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_utils.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_exti.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c.obj
@@ -1076,8 +1140,8 @@ test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c.obj
-test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c.obj
-test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_tim.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_ll_usart.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/system_stm32f0xx.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c.obj
@@ -1100,7 +1164,7 @@ test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/build.make
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Linking C executable test-md-bench.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Linking C executable test-md-bench.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-md-bench.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
