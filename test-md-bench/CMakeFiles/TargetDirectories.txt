@@ -1,0 +1,5 @@
+/Users/msvc/Documents/code/test-md-bench/CMakeFiles/test-md-bench.dir
+/Users/msvc/Documents/code/test-md-bench/CMakeFiles/edit_cache.dir
+/Users/msvc/Documents/code/test-md-bench/CMakeFiles/rebuild_cache.dir
+/Users/msvc/Documents/code/test-md-bench/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/msvc/Documents/code/test-md-bench/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
