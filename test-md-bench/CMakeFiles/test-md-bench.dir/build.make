@@ -909,10 +909,24 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.s"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.s
 
+CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: CMakeFiles/test-md-bench.dir/flags.make
+CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c
+CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj -MF CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj.d -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c
+
+CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c > CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i
+
+CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c -o CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s
+
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj: Src/sysmem.c
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj -MF CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj.d -o CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/sysmem.c
 
 CMakeFiles/test-md-bench.dir/Src/sysmem.c.i: cmake_force
@@ -926,7 +940,7 @@ CMakeFiles/test-md-bench.dir/Src/sysmem.c.s: cmake_force
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: Src/syscalls.c
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: CMakeFiles/test-md-bench.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj -MF CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj.d -o CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/syscalls.c
 
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.i: cmake_force
@@ -939,7 +953,7 @@ CMakeFiles/test-md-bench.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj: CMakeFiles/test-md-bench.dir/flags.make
 CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj: startup_stm32f031x6.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building ASM object CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building ASM object CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj -c /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/startup_stm32f031x6.s
 
 CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.i: cmake_force
@@ -1012,6 +1026,7 @@ test__md__bench_OBJECTS = \
 "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj" \
 "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj" \
 "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj" \
+"CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj" \
 "CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj" \
 "CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj" \
 "CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj"
@@ -1079,12 +1094,13 @@ test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/M
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c.obj
+test-md-bench.elf: CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/sysmem.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/startup_stm32f031x6.s.obj
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/build.make
 test-md-bench.elf: CMakeFiles/test-md-bench.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Linking C executable test-md-bench.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Linking C executable test-md-bench.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-md-bench.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,7 +1,10 @@
 {
-  "algorithm": "FOC",
   "description": "",
   "checkList": {},
+  "version": 13,
+  "workBenchVersion": "6.3.1",
+  "workBenchVersionFileCreation": "6.3.1",
+  "algorithm": "FOC",
   "hardwares": {
     "type": "INVERTER",
     "control": {
@@ -1000,9 +1003,6 @@
       ]
     }
   },
-  "version": 10,
-  "workBenchVersion": "6.3.1",
-  "workBenchVersionFileCreation": "6.3.1",
   "details": {
     "steps": {
       "powerSupply_0": {
@@ -1233,6 +1233,66 @@
         "modulationFlags": {
           "overModulation": false,
           "discontinuousPWM": false
+        }
+      },
+      "motor_0": {
+        "label": "",
+        "description": "",
+        "polePairs": "Number.NaN",
+        "mmsType": "",
+        "rs": "Number.NaN",
+        "ls": "Number.NaN",
+        "mmsLd_lq_ratio": "Number.NaN",
+        "maxCurrent": 6,
+        "maxDCVoltage": "Number.NaN",
+        "BEmfConstant": "Number.NaN",
+        "inertia": "Number.NaN",
+        "friction": "Number.NaN",
+        "maxRatedSpeed": "Number.NaN",
+        "hasHallSensor": false,
+        "hallSensor": {
+          "sensorsDisplacement": "Number.NaN",
+          "placementElectricalAngle": "Number.NaN"
+        },
+        "hasQuadratureEncoder": true,
+        "quadratureEncoder": {
+          "pulsesPerMechanicalRevolution": 1024,
+          "hasIndexPin": true
+        }
+      },
+      "userInterface": {
+        "startStop": {
+          "enabled": true,
+          "triggerEdge": "",
+          "pullMode": "",
+          "pin": ""
+        },
+        "mcpv2": {
+          "bufferSize": "Number.NaN",
+          "stlink": {
+            "enabled": false,
+            "dataLog": {
+              "enabled": false,
+              "numberOfSignal": "Number.NaN",
+              "bufferSize": "Number.NaN"
+            }
+          },
+          "usartA": {
+            "enabled": true,
+            "baudrate": "Number.NaN",
+            "channel": "",
+            "tx": "",
+            "rx": "",
+            "UsartIRQn": "",
+            "dataLog": {
+              "enabled": true,
+              "numberOfSignal": "Number.NaN",
+              "bufferSize": "Number.NaN"
+            }
+          },
+          "usartB": {
+            "enabled": false
+          }
         }
       }
     }

@@ -37,7 +37,7 @@
         <define key="ENC_USE_CH3" value="FALSE" />
         <define key="ENCODER" value="TRUE" />
         <define key="ENCODER_AVAILABLE" value="TRUE" />
-        <define key="ENCODER_PPR" value="4096" />
+        <define key="ENCODER_PPR" value="1024" />
         <define key="EXT_CLK_8_MHZ" value="TRUE" />
         <define key="EXT_CLOCK_FREQUENCY" value="EXT_CLK_8_MHZ" />
         <define key="EXT_OSC_PINS" value="[{'pin':'PF0-OSC_IN','mode':'HSE-External-Oscillator','signal':'RCC_OSC_IN','locked':'true'},{'pin':'PF1-OSC_OUT','mode':'HSE-External-Oscillator','signal':'RCC_OSC_OUT','locked':'true'}]" />
@@ -59,7 +59,7 @@
         <define key="M1_AMPLIFICATION_GAIN" value="3.33" />
         <define key="M1_ANGC" value="{0,0,0,0,0,0,0,0}" />
         <define key="M1_AUXILIARY_SPEED_SENSOR" value="NONE" />
-        <define key="M1_BOARD_MAX_CURRENT" value="2.4" />
+        <define key="M1_BOARD_MAX_CURRENT" value="6" />
         <define key="M1_BUS_VOLTAGE_READING" value="ENABLE" />
         <define key="M1_COMMUTATION_STEP_TIME_BUF_SIZE" value="12" />
         <define key="M1_CONSTANT1_D" value="58666" />
@@ -73,7 +73,7 @@
         <define key="M1_CURRENT_AMPLIFICATION_TOPO" value="EXTERNAL" />
         <define key="M1_CURRENT_SENSING_TOPO" value="SINGLE_SHUNT_PHASE_SHIFT" />
         <define key="M1_DBG_OPEN_LOOP_ENABLE" value="FALSE" />
-        <define key="M1_DC_CURRENT_RS_MEAS" value="2.4" />
+        <define key="M1_DC_CURRENT_RS_MEAS" value="6" />
         <define key="M1_DEFAULT_CONTROL_MODE" value="STC_SPEED_MODE" />
         <define key="M1_DEFAULT_FLUX_COMPONENT" value="0" />
         <define key="M1_DEFAULT_TARGET_SPEED_RPM" value="500" />
@@ -90,7 +90,7 @@
         <define key="M1_ENC_TIMER_IRQ" value="TIM2" />
         <define key="M1_ENC_TIMER_SELECTION" value="ENC_TIM2" />
         <define key="M1_ENC_USE_CH3" value="FALSE" />
-        <define key="M1_ENCODER_PPR" value="4096" />
+        <define key="M1_ENCODER_PPR" value="1024" />
         <define key="M1_FEED_FORWARD_CURRENT_REG_ENABLING" value="DISABLE" />
         <define key="M1_FINAL_I_ALIGNMENT" value="2" />
         <define key="M1_FLUX_WEAKENING_ENABLING" value="DISABLE" />
@@ -104,8 +104,8 @@
         <define key="M1_HIGH_SIDE_IDLE_STATE" value="TURN_OFF" />
         <define key="M1_HW_DEAD_TIME_NS" value="700" />
         <define key="M1_ICL_ENABLED" value="FALSE" />
-        <define key="M1_ID_DEMAG" value="-2.4" />
-        <define key="M1_IQMAX" value="2.4" />
+        <define key="M1_ID_DEMAG" value="-6" />
+        <define key="M1_IQMAX" value="6" />
         <define key="M1_LDLQ_RATIO" value="1.000" />
         <define key="M1_LOW_SIDE_IDLE_STATE" value="TURN_OFF" />
         <define key="M1_LOW_SIDE_SIGNALS_ENABLING" value="LS_PWM_TIMER" />
@@ -119,7 +119,7 @@
         <define key="M1_MOTOR_VOLTAGE_CONSTANT" value="3.8" />
         <define key="M1_MTPA_ENABLING" value="DISABLE" />
         <define key="M1_NOMINAL_BUS_VOLTAGE_V" value="24" />
-        <define key="M1_NOMINAL_CURRENT" value="2.4" />
+        <define key="M1_NOMINAL_CURRENT" value="6" />
         <define key="M1_OCP_BKIN_FILTER" value="3" />
         <define key="M1_OCP_BKIN_MODE" value="EXT_MODE" />
         <define key="M1_OCP_BKIN_POLARITY" value="EMSTOP_ACTIVE_LOW" />
@@ -180,9 +180,9 @@
         <define key="MAX_READABLE_CURRENT" value="19.795" />
         <define key="MC_WORKBENCH_VERSION" value="6.3.1" />
         <define key="MCP_ASPEP_OVER_UART" value="TRUE" />
-        <define key="MCP_ASYNC_EN" value="FALSE" />
-        <define key="MCP_ASYNC_OVER_ASPEP_EN" value="FALSE" />
-        <define key="MCP_ASYNC_OVER_UART_A_EN" value="FALSE" />
+        <define key="MCP_ASYNC_EN" value="TRUE" />
+        <define key="MCP_ASYNC_OVER_ASPEP_EN" value="TRUE" />
+        <define key="MCP_ASYNC_OVER_UART_A_EN" value="TRUE" />
         <define key="MCP_DMA_RX_UART_A" value="DMA1" />
         <define key="MCP_DMA_TX_UART_A" value="DMA1" />
         <define key="MCP_DMACH_RX_UART_A" value="3" />
@@ -195,7 +195,9 @@
         <define key="MCP_OVER_UART_A_EN" value="TRUE" />
         <define key="MCP_OVER_UART_B_EN" value="FALSE" />
         <define key="MCP_RX_SYNC_PAYLOAD_MAX" value="128" />
+        <define key="MCP_TX_ASYNC_PAYLOAD_MAX_UART_A" value="128" />
         <define key="MCP_TX_SYNC_PAYLOAD_MAX" value="128" />
+        <define key="MCPA_OVER_UART_A_STREAM" value="10" />
         <define key="MCU" value="STSPIN32F0251Q" />
         <define key="MCU_FAMILY" value="STM32F0" />
         <define key="MCU_LINE" value="STM32F0x1" />
@@ -273,12 +275,12 @@
         <define key="VBUS_GPIO_PIN" value="GPIO_Pin_1" />
         <define key="VBUS_GPIO_PORT" value="GPIOB" />
         <define key="WB_UI_CUTOFF_FREQUENCY" value="6000" />
-        <define key="WB_UI_ENCODER_HAS_INDEX_PIN" value="FALSE" />
+        <define key="WB_UI_ENCODER_HAS_INDEX_PIN" value="TRUE" />
         <define key="WB_UI_FLUX_TARGET" value="0" />
         <define key="WB_UI_FRICTION" value="14" />
         <define key="WB_UI_INERTIA" value="5" />
         <define key="WB_UI_MAGNETIC_STRUCTURE" value="SM-PMSM" />
-        <define key="WB_UI_MAX_CURRENT" value="2.4" />
+        <define key="WB_UI_MAX_CURRENT" value="6" />
         <define key="WB_UI_MAX_NOMINAL_DC_VOLTAGE" value="36" />
         <define key="WB_UI_MAX_PWMFREQUENCY" value="100000" />
         <define key="WB_UI_MOTOR_DESCRIPTION" value="BLDC Maxon 651611" />

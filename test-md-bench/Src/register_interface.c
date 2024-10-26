@@ -26,6 +26,7 @@
 #include "mc_config.h"
 #include "mcp.h"
 #include "mcp_config.h"
+#include "mcpa.h"
 #include "mc_configuration_registers.h"
 
 uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint16_t *size, int16_t dataAvailable)

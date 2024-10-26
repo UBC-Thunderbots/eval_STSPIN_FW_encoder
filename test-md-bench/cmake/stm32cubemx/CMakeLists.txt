@@ -84,6 +84,7 @@ target_sources(stm32cubemx INTERFACE
     ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c
     ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c
     ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c
+    ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c
     ../../Src/sysmem.c
     ../../Src/syscalls.c
     ../../startup_stm32f031x6.s

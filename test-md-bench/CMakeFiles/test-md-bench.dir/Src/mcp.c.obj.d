@@ -94,4 +94,5 @@ CMakeFiles/test-md-bench.dir/Src/mcp.c.obj: \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/drive_parameters.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/power_stage_parameters.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/mc_api.h

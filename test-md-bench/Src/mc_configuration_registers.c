@@ -35,7 +35,7 @@ const GlobalConfig_reg_t globalConfig_reg =
   .SDKVersion     = SDK_VERSION,
   .MotorNumber    =  1 ,
   .MCP_Flag       = FLAG_MCP_OVER_STLINK + FLAG_MCP_OVER_UARTA + FLAG_MCP_OVER_UARTB,
-  .MCPA_UARTA_LOG = 0,
+  .MCPA_UARTA_LOG = 10,
   .MCPA_UARTB_LOG = 0,
   .MCPA_STLNK_LOG = 0,
 };
@@ -44,7 +44,7 @@ static const ApplicationConfig_reg_t M1_ApplicationConfig_reg =
 {
   .maxMechanicalSpeed = 10000,
   .maxReadableCurrent = M1_MAX_READABLE_CURRENT,
-  .nominalCurrent     = 2.4,
+  .nominalCurrent     = 6,
   .nominalVoltage     = 24,
   .driveType          = DRIVE_TYPE_M1,
 };
@@ -57,7 +57,7 @@ static const MotorConfig_reg_t M1_MotorConfig_reg =
   .rs         = 0.94,
   .ls         = 0.00036*1.000,
   .ld         = 0.00036,
-  .maxCurrent = 2.4,
+  .maxCurrent = 6,
   .name = "MAXON 651611 (TBOTS)"
 };
 

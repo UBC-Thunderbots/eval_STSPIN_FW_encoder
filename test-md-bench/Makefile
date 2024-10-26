@@ -705,6 +705,30 @@ MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-md-bench.dir/build.make CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.s
 .PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.s
 
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj
+.PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.obj
+
+# target to build an object file
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-md-bench.dir/build.make CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj
+.PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.i: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i
+.PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.i
+
+# target to preprocess a source file
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-md-bench.dir/build.make CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i
+.PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.i
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.s: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s
+.PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.s
+
+# target to generate assembly for a file
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test-md-bench.dir/build.make CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s
+.PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.s
+
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj
 .PHONY : MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.obj
 
@@ -1706,6 +1730,9 @@ help:
 	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.obj"
 	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.i"
 	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.s"
+	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.obj"
+	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.i"
+	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.s"
 	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.obj"
 	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.i"
 	@echo "... MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.s"

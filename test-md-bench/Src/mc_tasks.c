@@ -324,6 +324,16 @@ __weak uint8_t TSK_HighFrequencyTask(void)
 
   /* USER CODE END HighFrequencyTask 1 */
 
+  GLOBAL_TIMESTAMP++;
+  if (0U == MCPA_UART_A.Mark)
+  {
+    /* Nothing to do */
+  }
+  else
+  {
+    MCPA_dataLog (&MCPA_UART_A);
+  }
+
   return (bMotorNbr);
 
 }
@@ -395,6 +405,14 @@ __weak void TSK_SafetyTask_PWMOFF(uint8_t bMotor)
       /* Nothing to do */
     }
     PWMC_SwitchOffPWM(pwmcHandle[bMotor]);
+    if (MCPA_UART_A.Mark != 0U)
+    {
+      MCPA_flushDataLog (&MCPA_UART_A);
+    }
+    else
+    {
+      /* Nothing to do */
+    }
     FOC_Clear(bMotor);
     /* USER CODE BEGIN TSK_SafetyTask_PWMOFF 1 */
 

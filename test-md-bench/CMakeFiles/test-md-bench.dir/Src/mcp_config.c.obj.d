@@ -64,5 +64,6 @@ CMakeFiles/test-md-bench.dir/Src/mcp_config.c.obj: \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/mcp_config.h \
  /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx/../../Inc/aspep.h

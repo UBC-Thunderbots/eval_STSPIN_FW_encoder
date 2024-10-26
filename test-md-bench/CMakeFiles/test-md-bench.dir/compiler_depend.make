@@ -1062,6 +1062,84 @@ CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h
 
+CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/string.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/strings.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+  Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f031x6.h \
+  Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h \
+  Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h \
+  Drivers/CMSIS/Include/cmsis_compiler.h \
+  Drivers/CMSIS/Include/cmsis_gcc.h \
+  Drivers/CMSIS/Include/cmsis_version.h \
+  Drivers/CMSIS/Include/core_cm0.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_exti.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_adc.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_comp.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dac.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h \
+  Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_usart.h \
+  Inc/mc_interface.h \
+  Inc/mc_parameters.h \
+  Inc/mc_stm_types.h \
+  Inc/mc_type.h \
+  Inc/pwm_curr_fdbk.h \
+  Inc/r1_ps_pwm_curr_fdbk.h \
+  Inc/register_interface.h \
+  Inc/stm32f0xx_hal_conf.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h
+
 CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj: MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c \
   /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
   /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
@@ -2455,6 +2533,7 @@ CMakeFiles/test-md-bench.dir/Src/mc_tasks.c.obj: Src/mc_tasks.c \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
@@ -2549,6 +2628,7 @@ CMakeFiles/test-md-bench.dir/Src/mc_tasks_foc.c.obj: Src/mc_tasks_foc.c \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
@@ -2638,6 +2718,7 @@ CMakeFiles/test-md-bench.dir/Src/mcp.c.obj: Src/mcp.c \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
@@ -2713,6 +2794,7 @@ CMakeFiles/test-md-bench.dir/Src/mcp_config.c.obj: Src/mcp_config.c \
   Inc/power_stage_parameters.h \
   Inc/stm32f0xx_hal_conf.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/usart_aspep_driver.h
 
@@ -3059,6 +3141,7 @@ CMakeFiles/test-md-bench.dir/Src/register_interface.c.obj: Src/register_interfac
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
@@ -3226,6 +3309,7 @@ CMakeFiles/test-md-bench.dir/Src/stm32_mc_common_it.c.obj: Src/stm32_mc_common_i
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/enc_align_ctrl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
+  MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h \
   MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
@@ -3671,10 +3755,6 @@ CMakeFiles/test-md-bench.dir/Src/usart_aspep_driver.c.obj: Src/usart_aspep_drive
 
 Src/usart_aspep_driver.c:
 
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c:
-
-Src/sysmem.c:
-
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h:
 
 /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/time.h:
@@ -3719,39 +3799,7 @@ Inc/stm32f0xx_it.h:
 
 Src/regular_conversion_manager.c:
 
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h:
-
-Src/stm32f0xx_it.c:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/alloca.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
-
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/stdio.h:
-
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/string.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/newlib.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h:
-
 Src/register_interface.c:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ramp_ext_mngr.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
 
 Src/mcp.c:
 
@@ -3775,29 +3823,11 @@ Src/mc_parameters.c:
 
 Src/mc_math.c:
 
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/signal.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h:
-
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h:
-
-Src/mc_interface.c:
-
 Src/mc_config_common.c:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/time.h:
-
-Inc/mc_parameters.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h:
 
 Src/mc_api.c:
 
 Inc/motorcontrol.h:
-
-Inc/mc_interface.h:
 
 Src/aspep.c:
 
@@ -3827,21 +3857,93 @@ MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_pos_fdbk.c:
 
-Inc/pwm_curr_fdbk.h:
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_pos_fdbk.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ramp_ext_mngr.h:
 
 Inc/mc_tasks.h:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/r_divider_bus_voltage_sensor.h:
 
-Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c:
+Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c:
 
-Src/r1_ps_pwm_curr_fdbk.c:
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c:
 
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c:
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c:
 
-Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c:
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
 
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pqd_motor_power_measurement.h:
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c:
+
+Inc/aspep.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/open_loop.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c:
+
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:
+
+Src/mc_interface.c:
+
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h:
+
+Inc/pwm_curr_fdbk.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/time.h:
+
+Inc/mc_parameters.h:
+
+Inc/mc_interface.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h:
+
+Src/stm32f0xx_it.c:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/strings.h:
+
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/stdio.h:
+
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/string.h:
+
+Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:
+
+Inc/parameters_conversion_f0xx.h:
+
+Drivers/CMSIS/Include/cmsis_compiler.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h:
+
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_usart.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+
+Src/stm32f0xx_hal_msp.c:
+
+Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/digital_output.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/newlib.h:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:
 
@@ -3857,18 +3959,6 @@ MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h:
 
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h:
-
-Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:
-
-Inc/parameters_conversion_f0xx.h:
-
-Drivers/CMSIS/Include/cmsis_compiler.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c:
-
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h:
@@ -3879,15 +3969,7 @@ Src/stm32f0xx_mc_it.c:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/circle_limitation.c:
 
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_usart.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
-
-Src/stm32f0xx_hal_msp.c:
-
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/digital_output.h:
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h:
 
@@ -3898,10 +3980,6 @@ Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c:
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dac.h:
-
-Inc/aspep.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/open_loop.h:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_bus_voltage_sensor.h:
 
@@ -3917,11 +3995,11 @@ Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_adc.h:
 
 /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h:
 
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/alloca.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
+
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c:
-
-Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h:
 
@@ -3932,6 +4010,16 @@ Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c:
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c:
 
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c:
+
+Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c:
+
+Src/r1_ps_pwm_curr_fdbk.c:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/revup_ctrl.c:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/pqd_motor_power_measurement.h:
+
+Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c:
 
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/circle_limitation.h:
 
@@ -3961,27 +4049,7 @@ Src/mcp_config.c:
 
 Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:
 
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pid_regulator.c:
-
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
-
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_speed_pos_fdbk.h:
-
-Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f031x6.h:
-
-Inc/regular_conversion_manager.h:
-
-Inc/mc_app_hooks.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c:
-
-Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_gpio.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h:
 
@@ -3989,11 +4057,17 @@ Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h:
 
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c:
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/signal.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc_ex.h:
 
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/strings.h:
+Inc/mc_app_hooks.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/ntc_temperature_sensor.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/virtual_speed_sensor.h:
 
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c:
 
@@ -4009,19 +4083,13 @@ Src/mc_config.c:
 
 Drivers/CMSIS/Include/cmsis_gcc.h:
 
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/errno.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/revup_ctrl.h:
-
-/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
-
-MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c:
-
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/speed_torq_ctrl.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+
+Src/sysmem.c:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/bus_voltage_sensor.c:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h:
 
@@ -4033,15 +4101,25 @@ Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_exti.h:
 
 /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
 
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/sto_speed_pos_fdbk.h:
+
+Inc/regular_conversion_manager.h:
+
+Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f031x6.h:
+
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_adc.h:
 
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h:
 
 Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h:
 
 Src/pwm_common.c:
 
 /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/types.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h:
 
 /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/machine/endian.h:
 
@@ -4052,6 +4130,16 @@ Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h:
 MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c:
 
 Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/errno.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc/revup_ctrl.h:
+
+MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ramp_ext_mngr.c:
+
+/Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
 
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c:
 

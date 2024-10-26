@@ -43,9 +43,9 @@
 
 #define MOTOR_MAX_SPEED_RPM     10000 /*!< Maximum rated speed  */
 #define MOTOR_VOLTAGE_CONSTANT  3.8 /*!< Volts RMS ph-ph /kRPM */
-#define NOMINAL_CURRENT_A       2.4
+#define NOMINAL_CURRENT_A       6
 
-#define ID_DEMAG_A              -2.4 /*!< Demagnetization current */
+#define ID_DEMAG_A              -6 /*!< Demagnetization current */
 
 /***************** MOTOR SENSORS PARAMETERS  ******************************/
 /* Motor sensors parameters are always generated but really meaningful only
@@ -64,7 +64,7 @@
                                                  signal H1 and the maximum of
                                                  the Bemf induced on phase A */
 /*** Quadrature encoder ***/
-#define M1_ENCODER_PPR          4096  /*!< Number of pulses per
+#define M1_ENCODER_PPR          1024  /*!< Number of pulses per
                                             revolution */
 
 #endif /* PMSM_MOTOR_PARAMETERS_H */

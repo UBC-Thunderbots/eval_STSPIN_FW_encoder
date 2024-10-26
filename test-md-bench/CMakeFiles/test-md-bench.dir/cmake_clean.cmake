@@ -47,6 +47,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/enc_align_ctrl.c.obj.d"
   "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj"
   "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c.obj.d"
+  "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj"
+  "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c.obj.d"
   "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj"
   "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/ntc_temperature_sensor.c.obj.d"
   "CMakeFiles/test-md-bench.dir/MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Src/open_loop.c.obj"
