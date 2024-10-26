@@ -468,47 +468,30 @@
     ],
     "motor": [
       {
-        "id": "motorMaxon",
-        "label": "MAXON EC-I 100W",
+        "label": "MAXON 651611 (TBOTS)",
         "hardwareFamily": "MOTOR",
-        "description": "brushless DC motor with encoder and Z Index",
+        "description": "BLDC Maxon 651611",
         "compatibility": [
           "FOC",
           "sixStep"
         ],
-        "polePairs": 7,
-        "nominalCurrent": 1.6,
+        "polePairs": 8,
+        "nominalCurrent": 2.4,
         "nominalDCVoltage": 36,
-        "rs": 0.43,
-        "ls": 0.338,
+        "rs": 0.94,
+        "ls": 0.36,
         "magneticStructure": {
           "type": "SM-PMSM"
         },
-        "BEmfConstant": 6.14,
+        "BEmfConstant": 3.77,
         "inertia": 5,
         "friction": 14,
-        "maxRatedSpeed": 4500,
-        "hallSensor": {
-          "sensorsDisplacement": 120,
-          "placementElectricalAngle": 300
-        },
+        "maxRatedSpeed": 10000,
         "quadratureEncoder": {
-          "pulsesPerMechanicalRevolution": 1024,
-          "hasIndexPin": true
+          "pulsesPerMechanicalRevolution": 4096,
+          "hasIndexPin": false
         },
-        "motorProfiler": {
-          "ctrl_board": "NUCLEO-F302R8",
-          "pwr_board": "X-NUCLEO-IHM07M1",
-          "operating_condition": {
-            "cutoff_frequency": 6000,
-            "pwm_frequency": 20000,
-            "foc_rate": 1
-          },
-          "mechanical": {
-            "acceleration": 1000,
-            "max_speed_startup": 1600
-          }
-        }
+        "id": "userMotor.MAXON 651611 (TBOTS).json"
       }
     ],
     "connections": [
@@ -1017,7 +1000,7 @@
       ]
     }
   },
-  "version": 13,
+  "version": 10,
   "workBenchVersion": "6.3.1",
   "workBenchVersionFileCreation": "6.3.1",
   "details": {
@@ -1034,34 +1017,9 @@
           "voltageThreshold": "Number.NaN"
         }
       },
-      "motor_0": {
-        "label": "MAXON 651511 (TBOTS)",
-        "description": "BLDC Maxon 651611",
-        "polePairs": 8,
-        "mmsType": "",
-        "rs": 0.94,
-        "ls": 0.36,
-        "mmsLd_lq_ratio": "Number.NaN",
-        "maxCurrent": 2.4,
-        "maxDCVoltage": "Number.NaN",
-        "BEmfConstant": 3.77,
-        "inertia": "Number.NaN",
-        "friction": "Number.NaN",
-        "maxRatedSpeed": 10000,
-        "hasHallSensor": false,
-        "hallSensor": {
-          "sensorsDisplacement": "Number.NaN",
-          "placementElectricalAngle": "Number.NaN"
-        },
-        "hasQuadratureEncoder": true,
-        "quadratureEncoder": {
-          "pulsesPerMechanicalRevolution": 4096,
-          "hasIndexPin": true
-        }
-      },
       "powerSwitches_0": {
         "setting": {
-          "PWMFrequency": 16000,
+          "PWMFrequency": 13100,
           "chargeBootCapDuty": "Number.NaN",
           "chargeBootCapMs": "Number.NaN",
           "drivingTopology": ""

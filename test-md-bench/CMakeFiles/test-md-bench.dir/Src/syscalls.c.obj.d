@@ -1,5 +1,5 @@
 CMakeFiles/test-md-bench.dir/Src/syscalls.c.obj: \
- /Users/msvc/Documents/code/test-md-bench/Src/syscalls.c \
+ /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/Src/syscalls.c \
  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/sys/stat.h \
  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
  /Applications/ArmGNUToolchain/13.3.rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \

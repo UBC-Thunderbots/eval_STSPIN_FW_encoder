@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/msvc/Documents/code/test-md-bench
+CMAKE_SOURCE_DIR = /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/msvc/Documents/code/test-md-bench
+CMAKE_BINARY_DIR = /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/msvc/Documents/code/test-md-bench && $(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/test-md-bench/CMakeFiles /Users/msvc/Documents/code/test-md-bench/cmake/stm32cubemx//CMakeFiles/progress.marks
-	cd /Users/msvc/Documents/code/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/test-md-bench/CMakeFiles 0
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx//CMakeFiles/progress.marks
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/msvc/Documents/code/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/clean
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/msvc/Documents/code/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/preinstall
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/msvc/Documents/code/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/preinstall
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake/stm32cubemx/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/msvc/Documents/code/test-md-bench && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/msvc/Documents/code/test-md-bench && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

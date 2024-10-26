@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/msvc/Documents/code/test-md-bench
+CMAKE_SOURCE_DIR = /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/msvc/Documents/code/test-md-bench
+CMAKE_BINARY_DIR = /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/test-md-bench/CMakeFiles /Users/msvc/Documents/code/test-md-bench//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/test-md-bench/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

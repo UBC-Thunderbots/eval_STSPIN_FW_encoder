@@ -58,7 +58,7 @@ static const MotorConfig_reg_t M1_MotorConfig_reg =
   .ls         = 0.00036*1.000,
   .ld         = 0.00036,
   .maxCurrent = 2.4,
-  .name = "MAXON EC-I 100W"
+  .name = "MAXON 651611 (TBOTS)"
 };
 
 static const FOCFwConfig_reg_t M1_FOCConfig_reg =

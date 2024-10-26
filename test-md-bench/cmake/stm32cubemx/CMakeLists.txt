@@ -20,7 +20,7 @@ target_include_directories(stm32cubemx INTERFACE
     ../../MCSDK_v6.3.1-Full/MotorControl/MCSDK/MCLib/Any/Inc
     ../../Drivers/CMSIS/Device/ST/STM32F0xx/Include
     ../../Drivers/CMSIS/Include
-    ../../../Drivers/CMSIS/DSP/Include
+    ../../Drivers/CMSIS/DSP/Include
 )
 
 target_sources(stm32cubemx INTERFACE

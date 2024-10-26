@@ -1,4 +1,4 @@
-# Install script for directory: /Users/msvc/Documents/code/test-md-bench/cmake/stm32cubemx
+# Install script for directory: /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/test-md-bench/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
