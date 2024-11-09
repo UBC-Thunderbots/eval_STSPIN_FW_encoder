@@ -37,7 +37,7 @@
         <define key="ENC_USE_CH3" value="FALSE" />
         <define key="ENCODER" value="TRUE" />
         <define key="ENCODER_AVAILABLE" value="TRUE" />
-        <define key="ENCODER_PPR" value="1024" />
+        <define key="ENCODER_PPR" value="4096" />
         <define key="EXT_CLK_8_MHZ" value="TRUE" />
         <define key="EXT_CLOCK_FREQUENCY" value="EXT_CLK_8_MHZ" />
         <define key="EXT_OSC_PINS" value="[{'pin':'PF0-OSC_IN','mode':'HSE-External-Oscillator','signal':'RCC_OSC_IN','locked':'true'},{'pin':'PF1-OSC_OUT','mode':'HSE-External-Oscillator','signal':'RCC_OSC_OUT','locked':'true'}]" />
@@ -87,7 +87,7 @@
         <define key="M1_ENC_ICx_FILTER" value="34" />
         <define key="M1_ENC_TIMER_SELECTION" value="ENC_TIM2" />
         <define key="M1_ENC_USE_CH3" value="FALSE" />
-        <define key="M1_ENCODER_PPR" value="1024" />
+        <define key="M1_ENCODER_PPR" value="4096" />
         <define key="M1_FEED_FORWARD_CURRENT_REG_ENABLING" value="DISABLE" />
         <define key="M1_FINAL_I_ALIGNMENT" value="2" />
         <define key="M1_FLUX_WEAKENING_ENABLING" value="DISABLE" />

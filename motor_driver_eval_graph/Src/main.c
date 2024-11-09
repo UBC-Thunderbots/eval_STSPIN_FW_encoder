@@ -106,12 +106,23 @@ int main(void)
   MX_ADC_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  MX_USART1_UART_Init();
+  // MX_USART1_UART_Init();
   MX_MotorControl_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
+
+  	MC_ProgramSpeedRampMotor1(120, 1000);
+	MC_StartMotor1();
+	HAL_Delay(5000);
+	MC_ProgramSpeedRampMotor1(360, 2000);
+	HAL_Delay(10000);
+	MC_ProgramSpeedRampMotor1(60, 2000);
+	HAL_Delay(5000);
+	MC_ProgramSpeedRampMotor1(0, 100);
+	MC_StopMotor1();
+	MC_ProgramSpeedRampMotor1(360, 3600);
 
   /* USER CODE END 2 */
 
