@@ -86,11 +86,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Src/mc_tasks.c</locationURI>
 		</link>
 		<link>
-			<name>Application/User/mcp.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Src/mcp.c</locationURI>
-		</link>
-		<link>
 			<name>Application/User/mcp_config.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Src/mcp_config.c</locationURI>

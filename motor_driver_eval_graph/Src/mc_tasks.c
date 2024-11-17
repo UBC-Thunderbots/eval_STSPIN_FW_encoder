@@ -290,7 +290,6 @@ __weak void MC_Scheduler(void)
         }
         else
         {
-          MCP_ReceivedPacket(&MCP_Over_UartA);
           MCP_Over_UartA.pTransportLayer->fSendPacket(MCP_Over_UartA.pTransportLayer, MCP_Over_UartA.txBuffer,
                                                       MCP_Over_UartA.txLength, MCTL_SYNC);
           /* No buffer available to build the answer ... should not occur */

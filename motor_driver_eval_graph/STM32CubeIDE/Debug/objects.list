@@ -9,7 +9,6 @@
 "./Application/User/mc_math.o"
 "./Application/User/mc_parameters.o"
 "./Application/User/mc_tasks.o"
-"./Application/User/mcp.o"
 "./Application/User/mcp_config.o"
 "./Application/User/motorcontrol.o"
 "./Application/User/pwm_curr_fdbk.o"
