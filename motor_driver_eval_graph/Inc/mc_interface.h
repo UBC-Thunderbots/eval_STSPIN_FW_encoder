@@ -8,7 +8,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -181,6 +181,7 @@ MC_ControlMode_t MCI_GetControlMode(MCI_Handle_t *pHandle);
 int16_t MCI_GetImposedMotorDirection(MCI_Handle_t *pHandle);
 int16_t MCI_GetLastRampFinalSpeed(MCI_Handle_t *pHandle);
 int16_t MCI_GetLastRampFinalTorque(MCI_Handle_t *pHandle);
+float_t MCI_GetLastRampFinalTorque_F(MCI_Handle_t *pHandle);
 uint16_t MCI_GetLastRampFinalDuration(MCI_Handle_t *pHandle);
 bool MCI_RampCompleted(MCI_Handle_t *pHandle);
 float_t MCI_GetLastRampFinalSpeed_F(MCI_Handle_t *pHandle);
@@ -224,5 +225,5 @@ void MCI_Clear_Iqdref(MCI_Handle_t *pHandle);
 
 #endif /* MC_INTERFACE_H */
 
-/******************* (C) COPYRIGHT 2023 STMicroelectronics *****END OF FILE****/
+/******************* (C) COPYRIGHT 2024 STMicroelectronics *****END OF FILE****/
 

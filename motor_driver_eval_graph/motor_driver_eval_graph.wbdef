@@ -17,7 +17,7 @@
         <define key="CURRENT_READING_TOPOLOGY" value="SINGLE_SHUNT" />
         <define key="DBG_MCU_LOAD_MEASURE" value="FALSE" />
         <define key="DEBUG_DAC_FUNCTIONALITY_EN" value="DISABLE" />
-        <define key="DMA_FULL_REQS" value="[{'dma_request':'ADC','channel':'DMA1_Channel1','mem_inc':'ENABLE','alignment':'HALFWORD','mode':'CIRCULAR','priority':'LOW','direction':'DMA_PERIPH_TO_MEMORY','irq_priority':1,'needToSet_irq':true,'irq_name_full':'DMA1_Channel1_IRQn','irq_name':'DMA1_Channel1'},{'dma_request':'TIM1_CH4/TRIG/COM','channel':'DMA1_Channel4','mem_inc':'ENABLE','alignment':'HALFWORD','mode':'CIRCULAR','priority':'HIGH','direction':'DMA_MEMORY_TO_PERIPH','irq_priority':0,'needToSet_irq':true,'irq_name_full':'DMA1_Channel4_5_IRQn','irq_name':'DMA1_Channel4_5'},{'dma_request':'TIM1_CH3/UP','channel':'DMA1_Channel5','mem_inc':'ENABLE','alignment':'HALFWORD','mode':'CIRCULAR','priority':'HIGH','direction':'DMA_MEMORY_TO_PERIPH','irq_priority':0,'needToSet_irq':true,'irq_name_full':'DMA1_Channel4_5_IRQn','irq_name':'DMA1_Channel4_5'},{'dma_request':'USART1_RX','channel':'DMA1_Channel3','mem_inc':'ENABLE','alignment':'BYTE','mode':'NORMAL','priority':'LOW','direction':'DMA_PERIPH_TO_MEMORY','irq_priority':3,'needToSet_irq':true,'irq_name_full':'DMA1_Channel2_3_IRQn','irq_name':'DMA1_Channel2_3'},{'dma_request':'USART1_TX','channel':'DMA1_Channel2','mem_inc':'ENABLE','alignment':'BYTE','mode':'NORMAL','priority':'LOW','direction':'DMA_MEMORY_TO_PERIPH','irq_priority':3,'needToSet_irq':false,'irq_name_full':'','irq_name':''}]" />
+        <define key="DMA_FULL_REQS" value="[{'dma_request':'ADC','channel':'DMA1_Channel1','mem_inc':'ENABLE','alignment':'HALFWORD','mode':'CIRCULAR','priority':'LOW','direction':'DMA_PERIPH_TO_MEMORY','irq_priority':1,'needToSet_irq':true,'irq_name_full':'DMA1_Channel1_IRQn','irq_name':'DMA1_Channel1'},{'dma_request':'TIM1_CH4/TRIG/COM','channel':'DMA1_Channel4','mem_inc':'ENABLE','alignment':'HALFWORD','mode':'CIRCULAR','priority':'HIGH','direction':'DMA_MEMORY_TO_PERIPH','irq_priority':0,'needToSet_irq':true,'irq_name_full':'DMA1_Channel4_5_IRQn','irq_name':'DMA1_Channel4_5'},{'dma_request':'TIM1_CH3/UP','channel':'DMA1_Channel5','mem_inc':'ENABLE','alignment':'HALFWORD','mode':'CIRCULAR','priority':'HIGH','direction':'DMA_MEMORY_TO_PERIPH','irq_priority':0,'needToSet_irq':true,'irq_name_full':'DMA1_Channel4_5_IRQn','irq_name':'DMA1_Channel4_5'},{'_tag':'all','dma_request':'USART1_RX','channel':'DMA1_Channel3','mem_inc':'ENABLE','alignment':'BYTE','mode':'NORMAL','priority':'LOW','direction':'DMA_PERIPH_TO_MEMORY','irq_priority':3,'needToSet_irq':true,'irq_name_full':'DMA1_Channel2_3_IRQn','irq_name':'DMA1_Channel2_3'},{'_tag':'all','dma_request':'USART1_TX','channel':'DMA1_Channel2','mem_inc':'ENABLE','alignment':'BYTE','mode':'NORMAL','priority':'LOW','direction':'DMA_MEMORY_TO_PERIPH','irq_priority':3,'needToSet_irq':false,'irq_name_full':'','irq_name':''}]" />
         <define key="DRIVE_NUMBER" value="1" />
         <define key="DRIVE_TYPE" value="FOC" />
         <define key="DRIVES_NUMBER_SELECTION" value="SINGLEDRIVE" />
@@ -26,7 +26,7 @@
         <define key="EN_DRIVER_AVAILABLE" value="ENABLE" />
         <define key="EN_DRIVER_GPIO_PIN" value="GPIO_Pin_11" />
         <define key="EN_DRIVER_GPIO_PORT" value="GPIOA" />
-        <define key="EN_DRIVER_POLARITY" value="ACTIVE_LOW" />
+        <define key="EN_DRIVER_POLARITY" value="ACTIVE_HIGH" />
         <define key="ENC_A_GPIO_PIN" value="GPIO_Pin_0" />
         <define key="ENC_A_GPIO_PORT" value="GPIOA" />
         <define key="ENC_B_GPIO_PIN" value="GPIO_Pin_1" />
@@ -37,12 +37,13 @@
         <define key="ENC_USE_CH3" value="FALSE" />
         <define key="ENCODER" value="TRUE" />
         <define key="ENCODER_AVAILABLE" value="TRUE" />
-        <define key="ENCODER_PPR" value="4096" />
+        <define key="ENCODER_PPR" value="1024" />
         <define key="EXT_CLK_8_MHZ" value="TRUE" />
         <define key="EXT_CLOCK_FREQUENCY" value="EXT_CLK_8_MHZ" />
         <define key="EXT_OSC_PINS" value="[{'pin':'PF0-OSC_IN','mode':'HSE-External-Oscillator','signal':'RCC_OSC_IN','locked':'true'},{'pin':'PF1-OSC_OUT','mode':'HSE-External-Oscillator','signal':'RCC_OSC_OUT','locked':'true'}]" />
         <define key="EXT_SWD_PINS" value="[{'pin':'PA13','ip':'SYS','signal':'SYS_SWDIO','mode':'Serial_Wire','locked':'true','label':'TMS'},{'pin':'PA14','ip':'SYS','signal':'SYS_SWCLK','mode':'Serial_Wire','locked':'true','label':'TCK'}]" />
         <define key="FEEDBACK_NET_FILTERING" value="FALSE" />
+        <define key="FLASH_SIZE" value="32" />
         <define key="HALL_SENSORS_AVAILABLE" value="FALSE" />
         <define key="HIGH_SIDE_IDLE_STATE" value="TURN_OFF" />
         <define key="HW_COMPLEMENTED_LOW_SIDE" value="DISABLE" />
@@ -60,6 +61,7 @@
         <define key="M1_AUXILIARY_SPEED_SENSOR" value="NONE" />
         <define key="M1_BOARD_MAX_CURRENT" value="6" />
         <define key="M1_BUS_VOLTAGE_READING" value="ENABLE" />
+        <define key="M1_COMMUTATION_STEP_TIME_BUF_SIZE" value="12" />
         <define key="M1_CONSTANT1_D" value="58743" />
         <define key="M1_CONSTANT1_Q" value="58743" />
         <define key="M1_CONSTANT2_QD" value="3781" />
@@ -85,9 +87,10 @@
         <define key="M1_ENC_B_GPIO_PIN" value="GPIO_Pin_1" />
         <define key="M1_ENC_B_GPIO_PORT" value="GPIOA" />
         <define key="M1_ENC_ICx_FILTER" value="34" />
+        <define key="M1_ENC_TIMER_IRQ" value="TIM2" />
         <define key="M1_ENC_TIMER_SELECTION" value="ENC_TIM2" />
         <define key="M1_ENC_USE_CH3" value="FALSE" />
-        <define key="M1_ENCODER_PPR" value="4096" />
+        <define key="M1_ENCODER_PPR" value="1024" />
         <define key="M1_FEED_FORWARD_CURRENT_REG_ENABLING" value="DISABLE" />
         <define key="M1_FINAL_I_ALIGNMENT" value="2" />
         <define key="M1_FLUX_WEAKENING_ENABLING" value="DISABLE" />
@@ -175,7 +178,7 @@
         <define key="M1_VBUS_CHANNEL" value="ADC_Channel_9" />
         <define key="M1_VBUS_PARTITIONING_FACTOR" value="0.020145044319097503" />
         <define key="MAX_READABLE_CURRENT" value="19.821" />
-        <define key="MC_WORKBENCH_VERSION" value="6.2.0" />
+        <define key="MC_WORKBENCH_VERSION" value="6.3.2" />
         <define key="MCP_ASPEP_OVER_UART" value="TRUE" />
         <define key="MCP_ASYNC_EN" value="TRUE" />
         <define key="MCP_ASYNC_OVER_ASPEP_EN" value="TRUE" />
@@ -212,18 +215,21 @@
         <define key="PHASE_CURRENTS_CHANNEL" value="ADC_Channel_5" />
         <define key="PHASE_CURRENTS_GPIO_PIN" value="GPIO_Pin_5" />
         <define key="PHASE_CURRENTS_GPIO_PORT" value="GPIOA" />
+        <define key="PHASE_U_PWM_CHANNEL" value="TIM_Channel_1" />
         <define key="PHASE_UH_GPIO_PIN" value="GPIO_Pin_8" />
         <define key="PHASE_UH_GPIO_PORT" value="GPIOA" />
         <define key="PHASE_UH_POLARITY" value="H_ACTIVE_LOW" />
         <define key="PHASE_UL_GPIO_PIN" value="GPIO_Pin_13" />
         <define key="PHASE_UL_GPIO_PORT" value="GPIOB" />
         <define key="PHASE_UL_POLARITY" value="L_ACTIVE_LOW" />
+        <define key="PHASE_V_PWM_CHANNEL" value="TIM_Channel_2" />
         <define key="PHASE_VH_GPIO_PIN" value="GPIO_Pin_9" />
         <define key="PHASE_VH_GPIO_PORT" value="GPIOA" />
         <define key="PHASE_VH_POLARITY" value="H_ACTIVE_LOW" />
         <define key="PHASE_VL_GPIO_PIN" value="GPIO_Pin_14" />
         <define key="PHASE_VL_GPIO_PORT" value="GPIOB" />
         <define key="PHASE_VL_POLARITY" value="L_ACTIVE_LOW" />
+        <define key="PHASE_W_PWM_CHANNEL" value="TIM_Channel_3" />
         <define key="PHASE_WH_GPIO_PIN" value="GPIO_Pin_10" />
         <define key="PHASE_WH_GPIO_PORT" value="GPIOA" />
         <define key="PHASE_WH_POLARITY" value="H_ACTIVE_LOW" />
@@ -276,8 +282,10 @@
         <define key="WB_UI_MAGNETIC_STRUCTURE" value="SM-PMSM" />
         <define key="WB_UI_MAX_CURRENT" value="6" />
         <define key="WB_UI_MAX_NOMINAL_DC_VOLTAGE" value="36" />
+        <define key="WB_UI_MAX_PWMFREQUENCY" value="100000" />
         <define key="WB_UI_MOTOR_DESCRIPTION" value="Motor low voltage " />
-        <define key="WB_UI_OCP_OCCOMPARATOR_THRESHOLD" value="0.46" />
+        <define key="WB_UI_OCP_SINGLE_INPUT_GAIN" value="0.025" />
+        <define key="WB_UI_OCP_SINGLE_INPUT_OFFSET" value="0.051" />
         <define key="WB_UI_OCP_SINGLEINPUT_INDEPENDENT_WIRES" value="{'CURRENT_INPUT_P':{'ip':'COMP0','pin':'CIN','peripheral':'COMP0_INP','help':'','cost':0}}" />
         <define key="WB_UI_OCP_THRESHOLD" value="16.36" />
         <define key="WB_UI_PW_BOARD_MAX_RATED_CURRENT" value="16.6" />

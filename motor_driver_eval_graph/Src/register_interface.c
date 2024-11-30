@@ -1,7 +1,7 @@
 
 /**
   ******************************************************************************
-  * @file    
+  * @file    register_interface.c
   * @author  Motor Control SDK Team, ST Microelectronics
   * @brief   This file provides firmware functions that implement the register access for the MCP protocol
   *
@@ -9,7 +9,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -180,12 +180,13 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
             retVal = MCP_ERROR_RO_REG;
             break;
           }
-
         case MC_REG_CONTROL_MODE:
         {
           uint8_t regdata8 = *data;
+
           if ((uint8_t)MCM_TORQUE_MODE == regdata8)
           {
+
             MCI_ExecTorqueRamp(pMCIN, MCI_GetTeref(pMCIN), 0);
           }
           else
@@ -201,7 +202,6 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
           {
             /* Nothing to do */
           }
-
           break;
         }
 
@@ -1330,4 +1330,4 @@ __weak uint8_t RI_GetPtrReg(uint16_t dataID, void **dataPtr)
 #endif
   return (retVal);
 }
-/************************ (C) COPYRIGHT 2023 STMicroelectronics *****END OF FILE****/
+/************************ (C) COPYRIGHT 2024 STMicroelectronics *****END OF FILE****/

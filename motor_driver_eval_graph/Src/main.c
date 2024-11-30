@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <stdio.h>
+#include <stdint.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -43,6 +45,8 @@
 ADC_HandleTypeDef hadc;
 DMA_HandleTypeDef hdma_adc;
 
+SPI_HandleTypeDef hspi1;
+
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
 DMA_HandleTypeDef hdma_tim1_ch4_trig_com;
@@ -53,7 +57,9 @@ DMA_HandleTypeDef hdma_usart1_rx;
 DMA_HandleTypeDef hdma_usart1_tx;
 
 /* USER CODE BEGIN PV */
-
+	//receiving and sending 1 byte values to and from Arduino master
+	uint8_t = dataTrans = 0x50;  //transmit 50hex(80dec) to master
+	uint8_t = dataReceive = 0x00;//temporary value for received data
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,9 +70,11 @@ static void MX_ADC_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_USART1_UART_Init(void);
-static void MX_NVIC_Init(void);
+static void MX_SPI1_Init(void);
+void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
-
+// receive data completion callback function
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -80,6 +88,7 @@ static void MX_NVIC_Init(void);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -106,13 +115,15 @@ int main(void)
   MX_ADC_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  // MX_USART1_UART_Init();
+  MX_USART1_UART_Init();
   MX_MotorControl_Init();
+  MX_SPI1_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
-
+  //alex's motor control commands, hard code
+  	  /*
   	MC_ProgramSpeedRampMotor1(120, 1000);
 	MC_StartMotor1();
 	HAL_Delay(5000);
@@ -123,6 +134,9 @@ int main(void)
 	MC_ProgramSpeedRampMotor1(0, 100);
 	MC_StopMotor1();
 	MC_ProgramSpeedRampMotor1(360, 3600);
+	*/
+
+  	HAL_SPI_Receive_IT(&hspi1, dataReceive, dataSize);
 
   /* USER CODE END 2 */
 
@@ -275,6 +289,47 @@ static void MX_ADC_Init(void)
   /* USER CODE BEGIN ADC_Init 2 */
 
   /* USER CODE END ADC_Init 2 */
+
+}
+
+/**
+  * @brief SPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI1_Init(void)
+{
+
+  /* USER CODE BEGIN SPI1_Init 0 */
+
+  /* USER CODE END SPI1_Init 0 */
+
+  /* USER CODE BEGIN SPI1_Init 1 */
+
+  /* USER CODE END SPI1_Init 1 */
+  /* SPI1 parameter configuration*/
+  hspi1.Instance = SPI1;
+  hspi1.Init.Mode = SPI_MODE_SLAVE;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.NSS = SPI_NSS_HARD_INPUT;
+  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi1.Init.CRCPolynomial = 7;
+  hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
+  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI1_Init 2 */
+  //SPI interrupt NVIC confguration
+  HAL_NVIC_SetPriority(SPI1_IRQn, 1, 0); //
+  HAL_NVIC_EnableIRQ(SPI1_IRQn);
+  /* USER CODE END SPI1_Init 2 */
 
 }
 
@@ -484,7 +539,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : M1_EN_DRIVER_Pin */
   GPIO_InitStruct.Pin = M1_EN_DRIVER_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(M1_EN_DRIVER_GPIO_Port, &GPIO_InitStruct);
 
@@ -493,7 +548,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//SPI Reception complete callback, sends back dataTrans
+void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
+    if (hspi->Instance == SPI1) {
+        // data received
+        printf("Received data: %u\n", dataReceive);
 
+        // send response to masdter
+        HAL_SPI_Transmit(&hspi1, &dataTrans, 1, HAL_MAX_DELAY);
+        // Restart the reception
+        HAL_SPI_Receive_IT(&hspi1, dataReceive, sizeof(dataReceive));
+    }
+}
 /* USER CODE END 4 */
 
 /**

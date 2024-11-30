@@ -9,7 +9,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -81,8 +81,8 @@ typedef struct
 #define EZEST                     6
 
 #define SDK_VERSION_MAIN   (0x6) /*!< [31:24] main version */
-#define SDK_VERSION_SUB1   (0x2) /*!< [23:16] sub1 version */
-#define SDK_VERSION_SUB2   (0x0) /*!< [15:8]  sub2 version */
+#define SDK_VERSION_SUB1   (0x3) /*!< [23:16] sub1 version */
+#define SDK_VERSION_SUB2   (0x2) /*!< [15:8]  sub2 version */
 #define SDK_VERSION_RC     (0x0) /*!< [7:0]  release candidate */
 #define SDK_VERSION               ((SDK_VERSION_MAIN << 24U)\
                                   |(SDK_VERSION_SUB1 << 16U)\
@@ -138,4 +138,4 @@ extern const MotorConfig_reg_t *MotorConfig_reg[NBR_OF_MOTORS];
 extern const ApplicationConfig_reg_t *ApplicationConfig_reg[NBR_OF_MOTORS];
 
 #endif /* MC_CONFIGURATION_REGISTERS_H */
-/************************ (C) COPYRIGHT 2023 STMicroelectronics *****END OF FILE****/
+/************************ (C) COPYRIGHT 2024 STMicroelectronics *****END OF FILE****/

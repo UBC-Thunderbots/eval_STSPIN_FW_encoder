@@ -9,7 +9,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -56,48 +56,6 @@
 /* Functions -----------------------------------------------*/
 
 /**
-  * @brief  Initializes all the object variables, usually it has to be called
-  *         once right after object creation. It is also used to assign the
-  *         state machine object, the speed and torque controller, and the FOC
-  *         drive object to be used by MC Interface.
-  * @param  pHandle pointer on the component instance to initialize.
-  * @param  pSTC the speed and torque controller used by the MCI.
-  * @param  pFOCVars pointer to FOC vars to be used by MCI.
-  * @param  pPosCtrl pointer to the position controller to be used by the MCI
-  *         (only present if position control is enabled)
-  * @param  pPWMHandle pointer to the PWM & current feedback component to be used by the MCI.
-  */
-__weak void MCI_Init(MCI_Handle_t *pHandle, SpeednTorqCtrl_Handle_t *pSTC, pFOCVars_t pFOCVars,
-                     PWMC_Handle_t *pPWMHandle )
-{
-#ifdef NULL_PTR_CHECK_MC_INT
-  if (MC_NULL == pHandle)
-  {
-    /* Nothing to do */
-  }
-  else
-  {
-#endif
-    pHandle->pSTC = pSTC;
-    pHandle->pFOCVars = pFOCVars;
-    pHandle->pPWM = pPWMHandle;
-
-    /* Buffer related initialization */
-    pHandle->lastCommand = MCI_NOCOMMANDSYET;
-    pHandle->hFinalSpeed = 0;
-    pHandle->hFinalTorque = 0;
-    pHandle->hDurationms = 0;
-    pHandle->CommandState = MCI_BUFFER_EMPTY;
-    pHandle->DirectCommand = MCI_NO_COMMAND;
-    pHandle->State = IDLE;
-    pHandle->CurrentFaults = MC_NO_FAULTS;
-    pHandle->PastFaults = MC_NO_FAULTS;
-#ifdef NULL_PTR_CHECK_MC_INT
-  }
-#endif
-}
-
-/**
   * @brief  Programs a motor speed ramp
   *
   * @param  pHandle Pointer on the component instance to operate on.
@@ -114,7 +72,7 @@ __weak void MCI_Init(MCI_Handle_t *pHandle, SpeednTorqCtrl_Handle_t *pSTC, pFOCV
   * Users can check the status of the command by calling the MCI_IsCommandAcknowledged()
   * function.
   *
-  * @sa MCI_ExecSpeedRamp_F
+  * @sa MCI_ExecSpeedRamp
   */
 __weak void MCI_ExecSpeedRamp(MCI_Handle_t *pHandle, int16_t hFinalSpeed, uint16_t hDurationms)
 {
@@ -154,7 +112,7 @@ __weak void MCI_ExecSpeedRamp(MCI_Handle_t *pHandle, int16_t hFinalSpeed, uint16
   * Users can check the status of the command by calling the MCI_IsCommandAcknowledged()
   * function.
   *
-  * @sa MCI_ExecSpeedRamp
+  * @sa MCI_ExecSpeedRamp_F
   */
 __weak void MCI_ExecSpeedRamp_F(MCI_Handle_t *pHandle, const float_t FinalSpeed, uint16_t hDurationms)
 {
@@ -166,8 +124,8 @@ __weak void MCI_ExecSpeedRamp_F(MCI_Handle_t *pHandle, const float_t FinalSpeed,
   else
   {
 #endif
-    int16_t hFinalSpeed = (((int16_t)FinalSpeed * (int16_t)SPEED_UNIT) / (int16_t)U_RPM);
-    MCI_ExecSpeedRamp(pHandle, hFinalSpeed, hDurationms);
+    float_t hFinalSpeed = ((FinalSpeed * (float_t)SPEED_UNIT) / (float_t)U_RPM);
+    MCI_ExecSpeedRamp(pHandle, (int16_t)hFinalSpeed, hDurationms);
 #ifdef NULL_PTR_CHECK_MC_INT
   }
 #endif
@@ -194,7 +152,7 @@ __weak void MCI_ExecSpeedRamp_F(MCI_Handle_t *pHandle, const float_t FinalSpeed,
   * Users can check the status of the command by calling the MCI_IsCommandAcknowledged()
   * function.
   *
-  * @sa MCI_ExecTorqueRamp_F
+  * @sa MCI_ExecTorqueRamp
   */
 __weak void MCI_ExecTorqueRamp(MCI_Handle_t *pHandle, int16_t hFinalTorque, uint16_t hDurationms)
 {
@@ -236,7 +194,7 @@ __weak void MCI_ExecTorqueRamp(MCI_Handle_t *pHandle, int16_t hFinalTorque, uint
   * Users can check the status of the command by calling the MCI_IsCommandAcknowledged()
   * function.
   *
-  * @sa MCI_ExecTorqueRamp
+  * @sa MCI_ExecTorqueRamp_F
   */
 __weak void MCI_ExecTorqueRamp_F(MCI_Handle_t *pHandle, const float_t FinalTorque, uint16_t hDurationms)
 {
@@ -248,8 +206,8 @@ __weak void MCI_ExecTorqueRamp_F(MCI_Handle_t *pHandle, const float_t FinalTorqu
   else
   {
 #endif
-    int16_t hFinalTorque = ((int16_t)FinalTorque * (int16_t)CURRENT_CONV_FACTOR);
-    MCI_ExecTorqueRamp(pHandle, hFinalTorque, hDurationms);
+    float_t hFinalTorque = (FinalTorque * (float_t)CURRENT_CONV_FACTOR);
+    MCI_ExecTorqueRamp(pHandle, (int16_t)hFinalTorque, hDurationms);
 #ifdef NULL_PTR_CHECK_MC_INT
   }
 #endif
@@ -317,8 +275,11 @@ __weak void MCI_SetCurrentReferences_F(MCI_Handle_t *pHandle, qd_f_t IqdRef)
   {
 #endif
     qd_t iqDrefTemp;
-    iqDrefTemp.d = (int16_t)((int16_t)IqdRef.d * (int16_t)CURRENT_CONV_FACTOR);
-    iqDrefTemp.q = (int16_t)((int16_t)IqdRef.q * (int16_t)CURRENT_CONV_FACTOR);
+    qd_f_t iqDrefTempf;
+    iqDrefTempf.d = (IqdRef.d * (float_t)CURRENT_CONV_FACTOR);
+    iqDrefTempf.q = (IqdRef.q * (float_t)CURRENT_CONV_FACTOR);
+    iqDrefTemp.d = (int16_t)(iqDrefTempf.d);
+    iqDrefTemp.q = (int16_t)(iqDrefTempf.q);
     MCI_SetCurrentReferences(pHandle, iqDrefTemp);
 #ifdef NULL_PTR_CHECK_MC_INT
   }
@@ -421,7 +382,7 @@ __weak bool MCI_StartMotor(MCI_Handle_t *pHandle)
   */
 __weak bool MCI_StartWithPolarizationMotor(MCI_Handle_t* pHandle)
 {
-  bool retVal = true;
+  bool retVal = false;
 #ifdef NULL_PTR_CHECK_MC_INT
   if (MC_NULL == pHandle)
   {
@@ -437,7 +398,7 @@ __weak bool MCI_StartWithPolarizationMotor(MCI_Handle_t* pHandle)
       pHandle->DirectCommand = MCI_START;
       pHandle->CommandState = MCI_COMMAND_NOT_ALREADY_EXECUTED;
       pHandle->pPWM->offsetCalibStatus = false;
-      retVal = false;
+      retVal = true;
   }
   else
   {
@@ -1038,6 +999,32 @@ __weak int16_t MCI_GetLastRampFinalTorque(MCI_Handle_t *pHandle) //cstat !MISRAC
 }
 
 /**
+  * @brief  It returns information about the last ramp final torque sent by the
+  *         user .This value represents actually the Iq current expressed in
+  *         Ampere.
+  * @param  pHandle Pointer on the component instance to work on.
+  * @retval float_t last ramp final torque sent by the user expressed in digit
+  */
+__weak float_t MCI_GetLastRampFinalTorque_F(MCI_Handle_t *pHandle) //cstat !MISRAC2012-Rule-8.13
+{
+#ifdef NULL_PTR_CHECK_MC_INT
+  float_t retVal = 0;
+
+  if (MC_NULL == pHandle)
+  {
+    /* Nothing to do */
+  }
+  else
+  {
+    retVal = ((float_t)pHandle->hFinalTorque * (float_t)pHandle->pScale->current);
+  }
+  return (retVal);
+#else
+  return ((float_t)pHandle->hFinalTorque * (float_t)pHandle->pScale->current);
+#endif
+}
+
+/**
   * @brief  It returns information about the last ramp Duration sent by the
   *         user .
   * @param  pHandle Pointer on the component instance to work on.
@@ -1545,7 +1532,7 @@ __weak float_t MCI_GetTeref_F(MCI_Handle_t *pHandle) //cstat !MISRAC2012-Rule-8.
 #ifdef NULL_PTR_CHECK_MC_INT
   return ((MC_NULL == pHandle) ? 0.0f : ((float_t)pHandle->pFOCVars->hTeref * (float_t)pHandle->pScale->current));
 #else
-  return ((float_t)(pHandle->pFOCVars->hTeref * pHandle->pScale->current));
+  return ((float_t)pHandle->pFOCVars->hTeref * (float_t)pHandle->pScale->current);
 #endif
 }
 
@@ -1650,4 +1637,4 @@ __weak void MCI_Clear_Iqdref(MCI_Handle_t *pHandle)
   * @}
   */
 
-/************************ (C) COPYRIGHT 2023 STMicroelectronics *****END OF FILE****/
+/************************ (C) COPYRIGHT 2024 STMicroelectronics *****END OF FILE****/

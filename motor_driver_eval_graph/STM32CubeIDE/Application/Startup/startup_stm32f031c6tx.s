@@ -86,7 +86,7 @@ LoopFillZerobss:
   bcc FillZerobss
 
 /* Call static constructors */
-/*  bl __libc_init_array */
+  bl __libc_init_array
 /* Call the application's entry point.*/
   bl main
 
@@ -104,12 +104,11 @@ LoopForever:
  * @param  None
  * @retval : None
 */
-.section .text.Default_Handler,"ax",%progbits
+    .section .text.Default_Handler,"ax",%progbits
 Default_Handler:
 Infinite_Loop:
   b Infinite_Loop
   .size Default_Handler, .-Default_Handler
-
 /******************************************************************************
 *
 * The minimal vector table for a Cortex M0.  Note that the proper constructs
@@ -166,6 +165,7 @@ g_pfnVectors:
   .word  0                                 /* Reserved                     */
   .word  SPI1_IRQHandler                   /* SPI1                         */
   .word  0                                 /* Reserved                     */
+  .word  USART1_IRQHandler                 /* USART1                       */
   .word  0                                 /* Reserved                     */
   .word  0                                 /* Reserved                     */
   .word  0                                 /* Reserved                     */
@@ -256,6 +256,9 @@ g_pfnVectors:
 
   .weak      SPI1_IRQHandler
   .thumb_set SPI1_IRQHandler,Default_Handler
+
+  .weak      USART1_IRQHandler
+  .thumb_set USART1_IRQHandler,Default_Handler
 
 
 

@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2023 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -24,14 +24,14 @@
 #include "parameters_conversion.h"
 #include "mc_parameters.h"
 #include "mc_config.h"
+#include "pqd_motor_power_measurement.h"
 
 /* USER CODE BEGIN Additional include */
 
 /* USER CODE END Additional include */
+
 #define FREQ_RATIO 1                /* Dummy value for single drive */
 #define FREQ_RELATION HIGHEST_FREQ  /* Dummy value for single drive */
-
-#include "pqd_motor_power_measurement.h"
 
 /* USER CODE BEGIN Additional define */
 
@@ -49,8 +49,8 @@ PID_Handle_t PIDSpeedHandle_M1 =
 {
   .hDefKpGain          = (int16_t)PID_SPEED_KP_DEFAULT,
   .hDefKiGain          = (int16_t)PID_SPEED_KI_DEFAULT,
-  .wUpperIntegralLimit = (int32_t)IQMAX * (int32_t)SP_KIDIV,
-  .wLowerIntegralLimit = -(int32_t)IQMAX * (int32_t)SP_KIDIV,
+  .wUpperIntegralLimit = (int32_t)(IQMAX * SP_KIDIV),
+  .wLowerIntegralLimit = -(int32_t)(IQMAX * SP_KIDIV),
   .hUpperOutputLimit   = (int16_t)IQMAX,
   .hLowerOutputLimit   = -(int16_t)IQMAX,
   .hKpDivisor          = (uint16_t)SP_KPDIV,
@@ -69,8 +69,8 @@ PID_Handle_t PIDIqHandle_M1 =
 {
   .hDefKpGain          = (int16_t)PID_TORQUE_KP_DEFAULT,
   .hDefKiGain          = (int16_t)PID_TORQUE_KI_DEFAULT,
-  .wUpperIntegralLimit = (int32_t)INT16_MAX * TF_KIDIV,
-  .wLowerIntegralLimit = (int32_t)-INT16_MAX * TF_KIDIV,
+  .wUpperIntegralLimit = (int32_t)(INT16_MAX * TF_KIDIV),
+  .wLowerIntegralLimit = (int32_t)(-INT16_MAX * TF_KIDIV),
   .hUpperOutputLimit   = INT16_MAX,
   .hLowerOutputLimit   = -INT16_MAX,
   .hKpDivisor          = (uint16_t)TF_KPDIV,
@@ -89,8 +89,8 @@ PID_Handle_t PIDIdHandle_M1 =
 {
   .hDefKpGain          = (int16_t)PID_FLUX_KP_DEFAULT,
   .hDefKiGain          = (int16_t)PID_FLUX_KI_DEFAULT,
-  .wUpperIntegralLimit = (int32_t)INT16_MAX * TF_KIDIV,
-  .wLowerIntegralLimit = (int32_t)-INT16_MAX * TF_KIDIV,
+  .wUpperIntegralLimit = (int32_t)(INT16_MAX * TF_KIDIV),
+  .wLowerIntegralLimit = (int32_t)(-INT16_MAX * TF_KIDIV),
   .hUpperOutputLimit   = INT16_MAX,
   .hLowerOutputLimit   = -INT16_MAX,
   .hKpDivisor          = (uint16_t)TF_KPDIV,
@@ -136,7 +136,6 @@ PWMC_R1_Handle_t PWM_Handle_M1 =
     .pFctRLDetectionModeDisable = MC_NULL,
     .pFctRLDetectionModeSetDuty = MC_NULL,
     .pFctRLTurnOnLowSidesAndStart = MC_NULL,
-
     .LowSideOutputs    = (LowSideOutputsFunction_t)LOW_SIDE_SIGNALS_ENABLING,
     .pwm_en_u_port     = MC_NULL,
     .pwm_en_u_pin      = (uint16_t)0,
@@ -159,7 +158,6 @@ PWMC_R1_Handle_t PWM_Handle_M1 =
     .Ib                         = 0,
     .Ic                         = 0,
     .LPFIqd_const               = LPF_FILT_CONST,
-    .DTTest                     = 0,
     .DTCompCnt                  = DTCOMPCNT,
     .PWMperiod                  = PWM_PERIOD_CYCLES,
     .Ton                        = TON,
@@ -169,6 +167,7 @@ PWMC_R1_Handle_t PWM_Handle_M1 =
     .BrakeActionLock            = false,
     .driverProtectionFlag       = false,
   },
+
   .DmaBuffCCR = {0,0,0,0,0,0},
   .PhaseOffset                  = 0,
   .Half_PWMPeriod               = PWM_PERIOD_CYCLES / 2u,
@@ -183,103 +182,7 @@ PWMC_R1_Handle_t PWM_Handle_M1 =
   .TCCnt                        = 0U,
   .UpdateFlagBuffer             = 0,
   .TCDoneFlag                   = true,
-
   .pParams_str                  = &R1_ParamsM1,
-};
-
-/**
-  * @brief  SpeedNPosition sensor parameters Motor 1 - Base Class.
-  */
-VirtualSpeedSensor_Handle_t VirtualSpeedSensorM1 =
-{
-
-  ._Super =
-  {
-    .bElToMecRatio             = POLE_PAIR_NUM,
-    .hMaxReliableMecSpeedUnit  = (uint16_t)(1.15*MAX_APPLICATION_SPEED_UNIT),
-    .hMinReliableMecSpeedUnit  = (uint16_t)(MIN_APPLICATION_SPEED_UNIT),
-    .bMaximumSpeedErrorsNumber = M1_SS_MEAS_ERRORS_BEFORE_FAULTS,
-    .hMaxReliableMecAccelUnitP = 65535,
-    .hMeasurementFrequency     = TF_REGULATION_RATE_SCALED,
-    .DPPConvFactor             = DPP_CONV_FACTOR,
-  },
-
-  .hSpeedSamplingFreqHz        = MEDIUM_FREQUENCY_TASK_RATE,
-  .hTransitionSteps            = (int16_t)((TF_REGULATION_RATE * TRANSITION_DURATION) / 1000.0),
-};
-
-/**
-  * @brief  SpeedNPosition sensor parameters Motor 1 - Encoder.
-  */
-ENCODER_Handle_t ENCODER_M1 =
-{
-  ._Super =
-  {
-    .bElToMecRatio             = POLE_PAIR_NUM,
-    .hMaxReliableMecSpeedUnit  = (uint16_t)(1.15 * MAX_APPLICATION_SPEED_UNIT),
-    .hMinReliableMecSpeedUnit  = (uint16_t)(MIN_APPLICATION_SPEED_UNIT),
-    .bMaximumSpeedErrorsNumber = M1_SS_MEAS_ERRORS_BEFORE_FAULTS,
-    .hMaxReliableMecAccelUnitP = 65535,
-    .hMeasurementFrequency     = TF_REGULATION_RATE_SCALED,
-    .DPPConvFactor             = DPP_CONV_FACTOR,
-  },
-
-  .PulseNumber                 = M1_ENCODER_PPR * 4,
-  .SpeedSamplingFreqHz         = MEDIUM_FREQUENCY_TASK_RATE,
-  .SpeedBufferSize             = ENC_AVERAGING_FIFO_DEPTH,
-  .TIMx                        = TIM2,
-  .ICx_Filter                  = M1_ENC_IC_FILTER_LL,
-};
-
-/**
-  * @brief  Encoder Alignment Controller parameters Motor 1.
-  */
-EncAlign_Handle_t EncAlignCtrlM1 =
-{
-  .hEACFrequencyHz = MEDIUM_FREQUENCY_TASK_RATE,
-  .hFinalTorque    = FINAL_I_ALIGNMENT,
-  .hElAngle        = ALIGNMENT_ANGLE_S16,
-  .hDurationms     = M1_ALIGNMENT_DURATION,
-  .bElToMecRatio   = POLE_PAIR_NUM,
-};
-
-/**
-  * Virtual temperature sensor parameters Motor 1.
-  */
-NTC_Handle_t TempSensor_M1 =
-{
-  .bSensorType     = VIRTUAL_SENSOR,
-  .hExpectedTemp_d = 555,
-  .hExpectedTemp_C = M1_VIRTUAL_HEAT_SINK_TEMPERATURE_VALUE,
-};
-
-/* Bus voltage sensor value filter buffer */
-static uint16_t RealBusVoltageSensorFilterBufferM1[M1_VBUS_SW_FILTER_BW_FACTOR];
-
-/**
-  * Bus voltage sensor parameters Motor 1.
-  */
-RegConv_t VbusRegConv_M1 =
-{
-    .regADC                   = ADC1,
-    .channel                  = MC_ADC_CHANNEL_9,
-    .samplingTime             = M1_VBUS_SAMPLING_TIME,
-};
-
-RDivider_Handle_t BusVoltageSensor_M1 =
-{
-  ._Super =
-  {
-    .SensorType               = REAL_SENSOR,
-    .ConversionFactor         = (uint16_t)(ADC_REFERENCE_VOLTAGE / VBUS_PARTITIONING_FACTOR),
-  },
-
-  .LowPassFilterBW            =  M1_VBUS_SW_FILTER_BW_FACTOR,
-  .OverVoltageThreshold       = OVERVOLTAGE_THRESHOLD_d,
-  .OverVoltageThresholdLow    = OVERVOLTAGE_THRESHOLD_d,
-  .OverVoltageHysteresisUpDir = true,
-  .UnderVoltageThreshold      =  UNDERVOLTAGE_THRESHOLD_d,
-  .aBuffer                    = RealBusVoltageSensorFilterBufferM1,
 };
 
 /** RAMP for Motor1
@@ -299,14 +202,36 @@ CircleLimitation_Handle_t CircleLimitationM1 =
   .MaxVd     = (uint16_t)((MAX_MODULE * 950) / 1000),
 };
 
-MCI_Handle_t Mci[NBR_OF_MOTORS];
+FOCVars_t FOCVars[NBR_OF_MOTORS];
+RampExtMngr_Handle_t *pREMNG[NBR_OF_MOTORS];
 SpeednTorqCtrl_Handle_t *pSTC[NBR_OF_MOTORS]    = {&SpeednTorqCtrlM1};
 NTC_Handle_t *pTemperatureSensor[NBR_OF_MOTORS] = {&TempSensor_M1};
 PID_Handle_t *pPIDIq[NBR_OF_MOTORS]             = {&PIDIqHandle_M1};
 PID_Handle_t *pPIDId[NBR_OF_MOTORS]             = {&PIDIdHandle_M1};
 PQD_MotorPowMeas_Handle_t *pMPM[NBR_OF_MOTORS]  = {&PQD_MotorPowMeasM1};
+
+MCI_Handle_t Mci[NBR_OF_MOTORS] =
+{
+  {
+    .pSTC = &SpeednTorqCtrlM1,
+    .pFOCVars = &FOCVars[0],
+    .pPWM = &PWM_Handle_M1._Super,
+    .lastCommand = MCI_NOCOMMANDSYET,
+    .hFinalSpeed = 0,
+    .hFinalTorque = 0,
+    .pScale = &scaleParams_M1,
+    .hDurationms = 0,
+    .DirectCommand = MCI_NO_COMMAND,
+    .State = IDLE,
+    .CurrentFaults = MC_NO_FAULTS,
+    .PastFaults = MC_NO_FAULTS,
+    .CommandState = MCI_BUFFER_EMPTY,
+  },
+
+};
+
 /* USER CODE BEGIN Additional configuration */
 /* USER CODE END Additional configuration */
 
-/******************* (C) COPYRIGHT 2023 STMicroelectronics *****END OF FILE****/
+/******************* (C) COPYRIGHT 2024 STMicroelectronics *****END OF FILE****/
 
