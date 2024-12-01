@@ -23,6 +23,25 @@ C_SRCS += \
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/speed_torq_ctrl.c \
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/virtual_speed_sensor.c 
 
+O_SRCS += \
+../Middlewares/MotorControl/bus_voltage_sensor.o \
+../Middlewares/MotorControl/circle_limitation.o \
+../Middlewares/MotorControl/digital_output.o \
+../Middlewares/MotorControl/enc_align_ctrl.o \
+../Middlewares/MotorControl/encoder_speed_pos_fdbk.o \
+../Middlewares/MotorControl/mcpa.o \
+../Middlewares/MotorControl/ntc_temperature_sensor.o \
+../Middlewares/MotorControl/open_loop.o \
+../Middlewares/MotorControl/pid_regulator.o \
+../Middlewares/MotorControl/pqd_motor_power_measurement.o \
+../Middlewares/MotorControl/pwm_common.o \
+../Middlewares/MotorControl/r_divider_bus_voltage_sensor.o \
+../Middlewares/MotorControl/ramp_ext_mngr.o \
+../Middlewares/MotorControl/revup_ctrl.o \
+../Middlewares/MotorControl/speed_pos_fdbk.o \
+../Middlewares/MotorControl/speed_torq_ctrl.o \
+../Middlewares/MotorControl/virtual_speed_sensor.o 
+
 OBJS += \
 ./Middlewares/MotorControl/bus_voltage_sensor.o \
 ./Middlewares/MotorControl/circle_limitation.o \

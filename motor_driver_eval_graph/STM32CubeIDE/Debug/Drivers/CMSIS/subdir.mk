@@ -7,6 +7,9 @@
 C_SRCS += \
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/system_stm32f0xx.c 
 
+O_SRCS += \
+../Drivers/CMSIS/system_stm32f0xx.o 
+
 OBJS += \
 ./Drivers/CMSIS/system_stm32f0xx.o 
 

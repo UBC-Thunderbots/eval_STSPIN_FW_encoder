@@ -1,0 +1,5 @@
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/CMakeFiles/motor_driver_eval_graph.dir
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/CMakeFiles/edit_cache.dir
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/CMakeFiles/rebuild_cache.dir
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

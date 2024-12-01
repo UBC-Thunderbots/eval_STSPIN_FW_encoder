@@ -1,0 +1,6 @@
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:61:13:ENC_Init	1
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:116:13:ENC_Clear	1
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:144:16:ENC_CalcAngle	1
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:202:13:ENC_CalcAvrgMecSpeedUnit	8
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:358:13:ENC_SetMecAngle	2
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:398:14:ENC_IRQHandler	1
