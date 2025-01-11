@@ -50,8 +50,8 @@ DMA_HandleTypeDef hdma_tim1_ch3_up;
 SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
-uint8_t dataTrans = 0x50;
-uint8_t dataRec = 0x00;
+uint8_t TX_Buffer[] = {0b10101010};
+// uint8_t dataRec = 0x00;
 
 /* USER CODE END PV */
 
@@ -134,8 +134,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_SPI_Transmit(&hspi1, &dataTrans, sizeof(dataTrans), HAL_MAX_DELAY);
-	  HAL_Delay(500);
+	  HAL_SPI_Transmit(&hspi1, TX_Buffer, sizeof(TX_Buffer), 100);
+	  HAL_Delay(100);
 
     /* USER CODE BEGIN 3 */
   }
@@ -475,22 +475,31 @@ static void MX_SPI1_Init(void)
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
+  hspi1.Init.NSS = SPI_NSS_SOFT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_128;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi1.Init.CRCPolynomial = 7;
   hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  /* hspi1.Init.NSSPolarity = SPI_NSS_POLARITY_LOW;
+  hspi1.Init.TxCRCInitializationPattern = SPI_CRC_INITIALIZATION_ALL_ZERO_PATTERN;
+  hspi1.Init.RxCRCInitializationPattern = SPI_CRC_INITIALIZATION_ALL_ZERO_PATTERN;
+  hspi1.Init.MasterSSIdleness = SPI_MASTER_SS_IDLENESS_00CYCLE;
+  hspi1.Init.MasterInterDataIdleness = SPI_MASTER_INTERDATA_IDLENESS_00CYCLE;
+  hspi1.Init.MasterReceiverAutoSusp = SPI_MASTER_RX_AUTOSUSP_DISABLE;
+  hspi1.Init.MasterKeepIOState = SPI_MASTER_KEEP_IO_STATE_DISABLE;
+  hspi1.Init.IOSwap = SPI_IO_SWAP_DISABLE; */
   if (HAL_SPI_Init(&hspi1) != HAL_OK)
   {
     Error_Handler();
   }
   /* USER CODE BEGIN SPI1_Init 2 */
   //SPI interrupt NVIC confguration
-  HAL_NVIC_SetPriority(SPI1_IRQn, 1, 0); //
-  HAL_NVIC_EnableIRQ(SPI1_IRQn);
-  HAL_SPI_RegisterCallback(&hspi1, 0x01U, HAL_SPI_RxCpltCallback); // HAL_SPI_RX_COMPLETE_CB_ID
+  // HAL_NVIC_SetPriority(SPI1_IRQn, 1, 0); //
+  // HAL_NVIC_EnableIRQ(SPI1_IRQn);
+  // HAL_SPI_RegisterCallback(&hspi1, 0x01U, HAL_SPI_RxCpltCallback); // HAL_SPI_RX_COMPLETE_CB_ID
   /* USER CODE END SPI1_Init 2 */
 }
 
@@ -499,9 +508,9 @@ static void MX_SPI1_Init(void)
 void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi) {
     if (hspi->Instance == SPI1) {
         // send response to masdter
-        HAL_SPI_Transmit(&hspi1, &dataTrans, 1, HAL_MAX_DELAY);
+        // HAL_SPI_Transmit(&hspi1, &dataTrans, 1, HAL_MAX_DELAY);
         // Restart the reception
-        HAL_SPI_Receive_IT(&hspi1, &dataRec, sizeof(dataRec));
+        // HAL_SPI_Receive_IT(&hspi1, &dataRec, sizeof(dataRec));
     }
 }
 
