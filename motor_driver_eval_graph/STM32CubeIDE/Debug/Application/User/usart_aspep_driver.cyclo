@@ -1,6 +1,6 @@
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:43:6:UASPEP_INIT	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:55:6:UASPEP_DAMCONFIG_TX	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:91:6:UASPEP_DAMCONFIG_RX	1
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:43:6:UASPEP_INIT	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:126:6:UASPEP_SEND_PACKET	2
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:152:6:UASPEP_RECEIVE_BUFFER	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/usart_aspep_driver.c:168:6:UASPEP_IDLE_ENABLE	1

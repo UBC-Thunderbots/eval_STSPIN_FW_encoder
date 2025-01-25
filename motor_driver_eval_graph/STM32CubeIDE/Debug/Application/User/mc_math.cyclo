@@ -2,5 +2,5 @@
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_math.c:342:24:MCM_Trig_Functions	6
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_math.c:173:13:MCM_Park	7
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_math.c:288:20:MCM_Rev_Park	1
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_math.c:403:16:MCM_Sqrt	6
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_math.c:403:16:MCM_Sqrt	8
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_math.c:450:17:MCM_floatToIntBit	1

@@ -2,7 +2,7 @@
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:100:13:PWMC_SetOffsetCalib	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:117:13:PWMC_GetOffsetCalib	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:151:13:PWMC_GetPhaseCurrents	8	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:194:17:PWMC_SetPhaseVoltage	40	static
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:194:17:PWMC_SetPhaseVoltage	32	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:398:13:PWMC_SwitchOffPWM	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:420:13:PWMC_SwitchOnPWM	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:448:13:PWMC_CurrentReadingCalibr	8	static
@@ -11,7 +11,7 @@
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:633:14:PWMC_OCP_Handler	0	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:681:14:PWMC_DP_Handler	0	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:730:14:PWMC_OVP_Handler	0	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:758:17:PWMC_IsFaultOccurred	0	static
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:758:17:PWMC_IsFaultOccurred	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:804:13:PWMC_OCPSetReferenceVoltage	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:827:13:PWMC_GetTurnOnLowSidesAction	0	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/pwm_curr_fdbk.c:839:13:PWMC_DPWM_ModeEnable	0	static

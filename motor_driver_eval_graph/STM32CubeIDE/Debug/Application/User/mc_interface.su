@@ -7,7 +7,7 @@
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:309:13:MCI_SetCurrentReferences_F	32	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:510:13:MCI_GetCalibratedOffsetsMotor	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:691:13:MCI_FaultProcessing	0	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:716:13:MCI_ExecBufferedCommands	16	static
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:716:13:MCI_ExecBufferedCommands	8	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:789:27:MCI_IsCommandAcknowledged	0	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:821:20:MCI_GetSTMState	0	static
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:842:17:MCI_GetOccurredFaults	0	static

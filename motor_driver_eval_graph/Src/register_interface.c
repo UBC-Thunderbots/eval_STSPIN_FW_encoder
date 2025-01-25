@@ -1,7 +1,7 @@
 
 /**
   ******************************************************************************
-  * @file    
+  * @file    register_interface.c
   * @author  Motor Control SDK Team, ST Microelectronics
   * @brief   This file provides firmware functions that implement the register access for the MCP protocol
   *
@@ -24,9 +24,6 @@
 #include "string.h"
 #include "register_interface.h"
 #include "mc_config.h"
-#include "mcp.h"
-#include "mcp_config.h"
-#include "mcpa.h"
 #include "mc_configuration_registers.h"
 
 uint8_t RI_SetRegisterGlobal(uint16_t regID, uint8_t typeID, uint8_t *data, uint16_t *size, int16_t dataAvailable)
@@ -496,7 +493,7 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
 
           case MC_REG_ASYNC_UARTA:
           {
-            retVal =  MCPA_cfgLog (&MCPA_UART_A, rawData);
+            // retVal =  MCPA_cfgLog (&MCPA_UART_A, rawData);
             break;
           }
 

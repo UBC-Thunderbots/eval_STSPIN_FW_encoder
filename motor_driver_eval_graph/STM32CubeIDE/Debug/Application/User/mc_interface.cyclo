@@ -20,7 +20,7 @@
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:656:13:MCI_FaultAcknowledged	3
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:886:17:MCI_GetFaultState	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:911:25:MCI_GetControlMode	1
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:927:16:MCI_GetImposedMotorDirection	7
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:927:16:MCI_GetImposedMotorDirection	4
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:995:16:MCI_GetLastRampFinalSpeed	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:1021:16:MCI_GetLastRampFinalTorque	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:1046:17:MCI_GetLastRampFinalDuration	1

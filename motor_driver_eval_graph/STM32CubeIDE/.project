@@ -86,11 +86,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/Src/mc_tasks.c</locationURI>
 		</link>
 		<link>
-			<name>Application/User/mcp_config.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Src/mcp_config.c</locationURI>
-		</link>
-		<link>
 			<name>Application/User/motorcontrol.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Src/motorcontrol.c</locationURI>
@@ -269,11 +264,6 @@
 			<name>Middlewares/MotorControl/encoder_speed_pos_fdbk.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c</locationURI>
-		</link>
-		<link>
-			<name>Middlewares/MotorControl/mcpa.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c</locationURI>
 		</link>
 		<link>
 			<name>Middlewares/MotorControl/ntc_temperature_sensor.c</name>

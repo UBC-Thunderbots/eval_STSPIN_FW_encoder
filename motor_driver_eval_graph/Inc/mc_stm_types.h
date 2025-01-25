@@ -161,13 +161,6 @@ __STATIC_INLINE uint32_t LL_DMA_IsActiveFlag_HT(DMA_TypeDef *DMAx, uint32_t Chan
 /* #define _001HZ 100 */
 /** @} */
 
-/**
- * @author Alex Shen (msvcredist2022)
- * SO THE ENCODER ISNT REALLY WORKING PROPERLY AND WE HAVE IT AT 1024 RPM WHEN IT SHOULD BE 4096 SO I LITERALLY HAVE NO IDEA WHAT IS WRONG
- * ANYWAYS TO COMPENSATE WE MAKE EVERYTHING 4x FASTER
- */
-#define U_RPM_geared (U_RPM * 0.2833333333)
-
 /* USER CODE BEGIN DEFINITIONS */
 /* Definitions placed here will not be erased by code generation */
 /**
@@ -193,6 +186,8 @@ __STATIC_INLINE uint32_t LL_DMA_IsActiveFlag_HT(DMA_TypeDef *DMAx, uint32_t Chan
  *
  * @{
  */
+
+#define U_RPM_geared (U_RPM * 0.2833333333)
 #define SPEED_UNIT U_RPM_geared
 
 /* USER CODE END DEFINITIONS */

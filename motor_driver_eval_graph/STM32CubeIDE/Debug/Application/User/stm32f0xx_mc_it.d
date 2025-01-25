@@ -35,6 +35,8 @@ Application/User/stm32f0xx_mc_it.o: \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
+ ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
+ ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_adc.h \
@@ -67,17 +69,12 @@ Application/User/stm32f0xx_mc_it.o: \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/ramp_ext_mngr.h \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/circle_limitation.h \
- ../../Inc/mcp_config.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
- ../../Inc/aspep.h ../../Inc/parameters_conversion.h ../../Inc/mc_math.h \
+ ../../Inc/mc_tasks.h ../../Inc/mc_parameters.h \
+ ../../Inc/parameters_conversion.h ../../Inc/mc_math.h \
  ../../Inc/parameters_conversion_f0xx.h ../../Inc/pmsm_motor_parameters.h \
  ../../Inc/drive_parameters.h ../../Inc/power_stage_parameters.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
- ../../Inc/mc_tasks.h ../../Inc/mc_parameters.h \
- ../../Inc/parameters_conversion.h ../../Inc/motorcontrol.h \
- ../../Inc/mc_config.h ../../Inc/mc_api.h \
+ ../../Inc/motorcontrol.h ../../Inc/mc_config.h \
+ ../../Inc/parameters_conversion.h ../../Inc/mc_api.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_exti.h
 ../../Inc/mc_config.h:
 ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
@@ -115,6 +112,8 @@ Application/User/stm32f0xx_mc_it.o: \
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h:
+../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:
+../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_rcc.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_system.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_adc.h:
@@ -150,22 +149,16 @@ Application/User/stm32f0xx_mc_it.o: \
 ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/encoder_speed_pos_fdbk.h:
 ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/ramp_ext_mngr.h:
 ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/circle_limitation.h:
-../../Inc/mcp_config.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h:
-../../Inc/aspep.h:
+../../Inc/mc_tasks.h:
+../../Inc/mc_parameters.h:
 ../../Inc/parameters_conversion.h:
 ../../Inc/mc_math.h:
 ../../Inc/parameters_conversion_f0xx.h:
 ../../Inc/pmsm_motor_parameters.h:
 ../../Inc/drive_parameters.h:
 ../../Inc/power_stage_parameters.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h:
-../../Inc/mc_tasks.h:
-../../Inc/mc_parameters.h:
-../../Inc/parameters_conversion.h:
 ../../Inc/motorcontrol.h:
 ../../Inc/mc_config.h:
+../../Inc/parameters_conversion.h:
 ../../Inc/mc_api.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_exti.h:

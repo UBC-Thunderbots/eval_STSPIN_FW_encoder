@@ -1,5 +1,5 @@
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:169:6:HAL_GPIO_Init	14
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:299:6:HAL_GPIO_DeInit	7
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:169:6:HAL_GPIO_Init	15
+/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:299:6:HAL_GPIO_DeInit	8
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:382:15:HAL_GPIO_ReadPin	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:415:6:HAL_GPIO_WritePin	2
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c:437:6:HAL_GPIO_TogglePin	1

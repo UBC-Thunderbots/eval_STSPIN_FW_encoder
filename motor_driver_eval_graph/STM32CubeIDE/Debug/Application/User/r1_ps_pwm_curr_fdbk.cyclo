@@ -1,9 +1,3 @@
-../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_tim.h:1936:22:LL_TIM_OC_DisablePreload	5
-../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h:582:22:LL_DMA_EnableChannel	1
-../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h:601:22:LL_DMA_DisableChannel	1
-../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h:1008:22:LL_DMA_SetDataLength	1
-../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_dma.h:2037:22:LL_DMA_EnableIT_TC	1
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/r1_ps_pwm_curr_fdbk.c:210:6:R1_1ShuntMotorVarsInit	1
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/r1_ps_pwm_curr_fdbk.c:346:13:R1_GetPhaseCurrents	41
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/r1_ps_pwm_curr_fdbk.c:739:13:R1_HFCurrentsCalibration	2
 /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/r1_ps_pwm_curr_fdbk.c:761:17:R1_SetADCSampPointPolarization	2

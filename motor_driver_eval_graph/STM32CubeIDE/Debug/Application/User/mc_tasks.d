@@ -31,6 +31,8 @@ Application/User/mc_tasks.o: \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
+ ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
+ ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h \
  ../../Inc/motorcontrol.h ../../Inc/mc_config.h \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
@@ -75,13 +77,7 @@ Application/User/mc_tasks.o: \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/digital_output.h \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/pwm_common.h \
  ../../Inc/mc_tasks.h ../../Inc/mc_parameters.h \
- ../../Inc/parameters_conversion.h ../../Inc/mcp_config.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
- ../../Inc/aspep.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h \
- ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h \
- ../../Inc/mc_app_hooks.h
+ ../../Inc/parameters_conversion.h ../../Inc/mc_app_hooks.h
 ../../Inc/main.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 ../../Inc/stm32f0xx_hal_conf.h:
@@ -114,6 +110,8 @@ Application/User/mc_tasks.o: \
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h:
+../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:
+../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h:
 ../../Inc/motorcontrol.h:
 ../../Inc/mc_config.h:
 ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h:
@@ -170,10 +168,4 @@ Application/User/mc_tasks.o: \
 ../../Inc/mc_tasks.h:
 ../../Inc/mc_parameters.h:
 ../../Inc/parameters_conversion.h:
-../../Inc/mcp_config.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcp.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h:
-../../Inc/aspep.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcptl.h:
-../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/mcpa.h:
 ../../Inc/mc_app_hooks.h:
