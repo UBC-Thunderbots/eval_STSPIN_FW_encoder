@@ -133,9 +133,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
 	  HAL_SPI_Transmit(&hspi1, TX_Buffer, sizeof(TX_Buffer), 100);
 	  HAL_Delay(100);
+    /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
