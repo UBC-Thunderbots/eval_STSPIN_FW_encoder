@@ -55,8 +55,8 @@ DMA_HandleTypeDef hdma_usart1_rx;
 DMA_HandleTypeDef hdma_usart1_tx;
 
 /* USER CODE BEGIN PV */
-uint8_t TX_Buffer[] = {0x42};
-uint8_t RX_Buffer[1] = {0b00000000};
+uint8_t TX_Buffer[] = {0x0, 0b11100111};
+uint8_t RX_Buffer[1] = {66};
 // uint8_t dataRec = 0x00;
 
 /* USER CODE END PV */
@@ -140,10 +140,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_SPI_Receive(&hspi1, RX_Buffer, sizeof(RX_Buffer), 100);
-	  HAL_SPI_Transmit(&hspi1, TX_Buffer, sizeof(TX_Buffer), 100);
+	  HAL_SPI_TransmitReceive(&hspi1, TX_Buffer, RX_Buffer, sizeof(TX_Buffer), 3000);
+	  // HAL_SPI_Receive(&hspi1, RX_Buffer, sizeof(RX_Buffer), 1000);
+	  // HAL_SPI_Transmit(&hspi1, RX_Buffer, sizeof(RX_Buffer), 100);
 
-	  HAL_Delay(100);
+	  // TX_Buffer[0] = RX_Buffer[0];
+
+	  // HAL_Delay(100);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -312,14 +315,13 @@ static void MX_SPI1_Init(void)
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
+  hspi1.Init.NSS = SPI_NSS_HARD_INPUT;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi1.Init.CRCPolynomial = 7;
   hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
   if (HAL_SPI_Init(&hspi1) != HAL_OK)
   {
     Error_Handler();
@@ -480,7 +482,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 1843200;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;

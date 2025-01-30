@@ -491,12 +491,6 @@ uint8_t RI_SetRegisterMotor1(uint16_t regID, uint8_t typeID, uint8_t *data, uint
             break;
           }
 
-          case MC_REG_ASYNC_UARTA:
-          {
-            // retVal =  MCPA_cfgLog (&MCPA_UART_A, rawData);
-            break;
-          }
-
           default:
           {
             retVal = MCP_ERROR_UNKNOWN_REG;

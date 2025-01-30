@@ -752,12 +752,6 @@ __weak uint8_t TSK_HighFrequencyTask(void)
 
 
   /* if (0U == MCPA_UART_A.Mark)
-  {
-  }
-  else
-  {
-    MCPA_dataLog (&MCPA_UART_A);
-  }*/
 
   /* USER CODE END HighFrequencyTask 1 */
 
