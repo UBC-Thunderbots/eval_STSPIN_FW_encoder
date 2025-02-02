@@ -379,6 +379,9 @@ __weak bool MCI_StartMotor(MCI_Handle_t *pHandle)
     else
     {
       /* Reject the command as the condition are not met */
+    	if(MCI_GetSTMState(pHandle) == FAULT_NOW) {
+    		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+    	}
     }
 #ifdef NULL_PTR_CHECK_MC_INT
   }
