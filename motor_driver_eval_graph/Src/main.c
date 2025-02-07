@@ -108,31 +108,32 @@ int main(void)
   MX_TIM2_Init();
   // MX_USART1_UART_Init();
   MX_SPI1_Init();
-//  MX_MotorControl_Init();
+  MX_MotorControl_Init();
 
   /* Initialize interrupts */
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
+ HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
+//  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
 
-//  bool ret = false;
+  bool ret = false;
 
-//  MC_ProgramSpeedRampMotor1(120, 1000);
-//  ret = MC_StartMotor1();
-//  if(ret == false) {
-//	  // The start motor command was discarded.
-//	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
-//  }
-//
+  MC_ProgramSpeedRampMotor1(120, 1000);
+  ret = MC_StartMotor1(); // This function only initiates the startup sequence, but the FSM in the background actually performs it.
+  if(ret == false) {
+	  // The start motor command was discarded
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // When testing, this pin did not go high, i.e. the start command was successful.
+  }
+
 //  HAL_Delay(5000);
-//  /*MC_ProgramSpeedRampMotor1(360, 2000);
-//  HAL_Delay(10000);
-//  MC_ProgramSpeedRampMotor1(60, 2000);
-//  HAL_Delay(5000);
-//  MC_ProgramSpeedRampMotor1(0, 100);*/
-//
+  /*MC_ProgramSpeedRampMotor1(360, 2000);
+  HAL_Delay(10000);
+  MC_ProgramSpeedRampMotor1(60, 2000);
+  HAL_Delay(5000);
+  MC_ProgramSpeedRampMotor1(0, 100);*/
+
 //  MC_StopMotor1();
 //  MC_ProgramSpeedRampMotor1(360, 3600);
 
@@ -142,8 +143,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-//  while (1)
-//  {
+  while (1)
+  {
+
+  }
     /* USER CODE END WHILE */
 //	  HAL_SPI_Transmit(&hspi1, TX_Buffer, sizeof(TX_Buffer), 100);
 //	  HAL_Delay(100);
@@ -475,13 +478,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-//  /* Configure "motor start command returned false" test point GPIO pin */
-//  GPIO_InitStruct.Pin = GPIO_PIN_4;
-//  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-//  GPIO_InitStruct.Pull = GPIO_NOPULL;
-//  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-//
-//  /* Configure FAULT test point GPIO pin */
+  /* Configure "motor start command returned false" test point GPIO pin */
+  GPIO_InitStruct.Pin = GPIO_PIN_4;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /* Configure FAULT test point GPIO pin */
 //  GPIO_InitStruct.Pin = GPIO_PIN_1;
 //  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
 //  GPIO_InitStruct.Pull = GPIO_NOPULL;
