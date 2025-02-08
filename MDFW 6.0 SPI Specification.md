@@ -15,6 +15,7 @@ This document contains the specifications and protocol documentation for communi
 # How instructions work:
     - instructions are send as one byte opcodes.
     - if instruction needs data passing, send data as a 15 number with one bit paraty (2 clock cycles)
+    - maybe uses 4th byte for integrity checking
 
 # Opcodes (1 byte)
     - set speed parameter
@@ -25,8 +26,12 @@ This document contains the specifications and protocol documentation for communi
     - send fault
     - set current to motor
 
+# opcode specification:
+    -
+
 # Sending parameters: Current plan
     - send as 3 bytes 
-            1st byte: 1st bit parity bit for 1st byte, 4 bits for opcode, 3 bits for 2nd and 3rd byte parity)
-            2nd ,3rd byte: represent a max motor speed of 45045
+            1st byte: opcode
+            2nd, 3rd byte: instruction value
+            4th byte: integrity byte
 
