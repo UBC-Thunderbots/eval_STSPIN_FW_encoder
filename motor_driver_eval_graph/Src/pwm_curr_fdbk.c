@@ -739,7 +739,7 @@ __weak void *PWMC_OVP_Handler(PWMC_Handle_t *pHandle, TIM_TypeDef *TIMx)
   {
 #endif
     TIMx->BDTR |= LL_TIM_OSSI_ENABLE;
-    pHandle->OverVoltageFlag = true;
+    pHandle->OverVoltageFlag = true; // need to be changed back in the future
     pHandle->BrakeActionLock = true;
     tempPointer = &(pHandle->Motor);
 #ifdef NULL_PTR_CHECK_PWR_CUR_FDB

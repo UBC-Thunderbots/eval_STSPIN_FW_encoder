@@ -357,7 +357,7 @@ __weak void MCI_SetCurrentReferences_F(MCI_Handle_t *pHandle, qd_f_t IqdRef)
   * state machine of the motor and verify that the #RUN state has been reached.
   * Note also that if the startup sequence fails the #RUN state may never be reached.
   */
-__weak bool MCI_StartMotor(MCI_Handle_t *pHandle)
+__weak bool MCI_StartMotor(MCI_Handle_t* pHandle)
 {
   bool retVal = false;
 #ifdef NULL_PTR_CHECK_MC_INT

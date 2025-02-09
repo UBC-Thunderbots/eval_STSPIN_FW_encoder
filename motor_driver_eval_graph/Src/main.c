@@ -119,12 +119,16 @@ int main(void)
 //  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
 
   bool ret = false;
+  MC_GetOccurredFaultsMotor1(); // call it once for the compiler to add it to the code so we can monitor it
 
   MC_ProgramSpeedRampMotor1(120, 1000);
   ret = MC_StartMotor1(); // This function only initiates the startup sequence, but the FSM in the background actually performs it.
+
+  MCI_State_t motorState = MC_GetSTMStateMotor1(); // set a breakpoint on the line if reading the state via Debugger
+
   if(ret == false) {
 	  // The start motor command was discarded
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // When testing, this pin did not go high, i.e. the start command was successful.
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET); // When testing, this pin did not go high, i.e. the start command was successful.
   }
 
 //  HAL_Delay(5000);
@@ -145,7 +149,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	  MCI_State_t motorState = MC_GetSTMStateMotor1();
   }
     /* USER CODE END WHILE */
 //	  HAL_SPI_Transmit(&hspi1, TX_Buffer, sizeof(TX_Buffer), 100);

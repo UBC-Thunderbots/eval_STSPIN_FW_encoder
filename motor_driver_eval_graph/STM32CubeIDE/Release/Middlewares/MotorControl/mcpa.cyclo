@@ -1,4 +1,3 @@
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:266:6:MCPA_stopDataLog	2
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:44:6:MCPA_dataLog	14
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:215:6:MCPA_flushDataLog	4
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:295:9:MCPA_cfgLog	8
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:44:6:MCPA_dataLog	19
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:215:6:MCPA_flushDataLog	5
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/mcpa.c:295:9:MCPA_cfgLog	11

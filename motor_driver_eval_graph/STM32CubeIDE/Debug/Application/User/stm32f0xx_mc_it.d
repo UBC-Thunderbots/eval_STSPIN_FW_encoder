@@ -1,5 +1,5 @@
 Application/User/stm32f0xx_mc_it.o: \
- C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/stm32f0xx_mc_it.c \
+ C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/stm32f0xx_mc_it.c \
  ../../Inc/mc_config.h \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/pid_regulator.h \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \

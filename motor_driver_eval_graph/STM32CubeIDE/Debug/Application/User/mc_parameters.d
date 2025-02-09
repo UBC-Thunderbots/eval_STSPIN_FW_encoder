@@ -1,5 +1,5 @@
 Application/User/mc_parameters.o: \
- C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_parameters.c \
+ C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_parameters.c \
  ../../Inc/main.h ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
  ../../Inc/stm32f0xx_hal_conf.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h \
