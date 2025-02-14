@@ -112,7 +112,7 @@
 /**************************    FIRMWARE PROTECTIONS SECTION   *****************/
 #define OV_VOLTAGE_THRESHOLD_V          29 /*!< Over-voltage
                                                          threshold */
-#define UD_VOLTAGE_THRESHOLD_V          20 /*!< Under-voltage
+#define UD_VOLTAGE_THRESHOLD_V          16 /*!< Under-voltage
                                                           threshold */
 #ifdef NOT_IMPLEMENTED
 

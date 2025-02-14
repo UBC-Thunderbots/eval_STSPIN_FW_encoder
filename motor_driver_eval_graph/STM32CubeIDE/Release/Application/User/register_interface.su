@@ -1,7 +1,0 @@
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:1141:9:RI_MovString	12	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:32:9:RI_SetRegisterGlobal	16	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:166:9:RI_SetRegisterMotor1	24	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:523:9:RI_GetRegisterGlobal	16	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:668:11:RI_GetRegisterMotor1	80	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:1167:9:RI_GetIDSize	0	static
-/Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/register_interface.c:1202:16:RI_GetPtrReg	8	static

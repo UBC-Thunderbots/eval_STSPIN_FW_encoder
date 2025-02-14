@@ -1,5 +1,5 @@
 Middlewares/MotorControl/pqd_motor_power_measurement.o: \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c \
+ /Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/pqd_motor_power_measurement.h \
  ../../MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Inc/bus_voltage_sensor.h \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
@@ -31,6 +31,8 @@ Middlewares/MotorControl/pqd_motor_power_measurement.o: \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
+ ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h \
+ ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h \
@@ -76,6 +78,8 @@ Middlewares/MotorControl/pqd_motor_power_measurement.o: \
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h:
+../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:
+../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h:
 ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h:

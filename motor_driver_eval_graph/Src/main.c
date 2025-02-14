@@ -121,16 +121,17 @@ int main(void)
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
 
-  	/*MC_ProgramSpeedRampMotor1(120, 1000);
+  	MC_ProgramSpeedRampMotor1(1,0);
 	MC_StartMotor1();
+	MC_ProgramSpeedRampMotor1(120, 1000);
 	HAL_Delay(5000);
-	MC_ProgramSpeedRampMotor1(360, 2000);
-	HAL_Delay(10000);
+	MC_ProgramSpeedRampMotor1(360, 3000);
+	HAL_Delay(5000);
 	MC_ProgramSpeedRampMotor1(60, 2000);
 	HAL_Delay(5000);
 	MC_ProgramSpeedRampMotor1(0, 100);
 	MC_StopMotor1();
-	MC_ProgramSpeedRampMotor1(360, 3600);*/
+	MC_ProgramSpeedRampMotor1(360, 3600);
 
 	// HAL_SPI_Receive_IT(&hspi1, &dataRec, sizeof(dataRec));
 
@@ -140,7 +141,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_SPI_TransmitReceive(&hspi1, TX_Buffer, RX_Buffer, sizeof(TX_Buffer), 3000);
+	  // HAL_SPI_TransmitReceive(&hspi1, TX_Buffer, RX_Buffer, sizeof(TX_Buffer), 3000);
 	  // HAL_SPI_Receive(&hspi1, RX_Buffer, sizeof(RX_Buffer), 1000);
 	  // HAL_SPI_Transmit(&hspi1, RX_Buffer, sizeof(RX_Buffer), 100);
 

@@ -1,5 +1,5 @@
 Middlewares/MotorControl/r_divider_bus_voltage_sensor.o: \
- /Users/msvc/Documents/code/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c \
+ /Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/MCSDK_v6.2.0-Full/MotorControl/MCSDK/MCLib/Any/Src/r_divider_bus_voltage_sensor.c \
  ../../Inc/mc_type.h ../../Inc/mc_stm_types.h \
  ../../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_ll_bus.h \
  ../../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h \
