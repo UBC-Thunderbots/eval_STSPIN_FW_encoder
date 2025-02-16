@@ -11,10 +11,10 @@ C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_grap
 C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:338:13:TSK_MediumFrequencyTaskM1	40	static
 C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:257:13:MC_Scheduler	16	static
 C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:747:16:TSK_HighFrequencyTask	56	static
-C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:872:13:TSK_SafetyTask_PWMOFF	32	static
-C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:847:13:TSK_SafetyTask	8	static
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:882:13:TSK_SafetyTask_PWMOFF	32	static
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:857:13:TSK_SafetyTask	8	static
 C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:220:13:MC_RunMotorControlTasks	8	static
-C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:937:22:GetMCI	0	static
-C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:957:13:TSK_HardwareFaultTask	8	static
-C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:970:13:UI_HandleStartStopButton_cb	8	static
-C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:988:13:mc_lock_pins	16	static
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:947:22:GetMCI	0	static
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:967:13:TSK_HardwareFaultTask	8	static
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:980:13:UI_HandleStartStopButton_cb	8	static
+C:/Users/kenny/Desktop/Thunderbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:998:13:mc_lock_pins	16	static

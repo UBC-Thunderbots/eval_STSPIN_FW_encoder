@@ -78,6 +78,7 @@ void HAL_SPI_RxCpltCallback(SPI_HandleTypeDef *hspi);
   * @brief  The application entry point.
   * @retval int
   */
+uint8_t error_tag = 0;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -87,6 +88,9 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+
+
+
   HAL_Init();
 
   /* USER CODE BEGIN Init */
@@ -150,6 +154,11 @@ int main(void)
   while (1)
   {
 	  MCI_State_t motorState = MC_GetSTMStateMotor1();
+	  MC_AcknowledgeFaultMotor1(); // constantly acknowledge faults
+	  if (motorState == IDLE){
+		  MC_ProgramSpeedRampMotor1(120, 1000);
+		  MC_StartMotor1();
+	  }
   }
     /* USER CODE END WHILE */
 //	  HAL_SPI_Transmit(&hspi1, TX_Buffer, sizeof(TX_Buffer), 100);
@@ -183,6 +192,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PREDIV = RCC_PREDIV_DIV1;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
+    error_tag = 1;
     Error_Handler();
   }
 
@@ -196,12 +206,14 @@ void SystemClock_Config(void)
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
+    error_tag = 2;
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART1;
   PeriphClkInit.Usart1ClockSelection = RCC_USART1CLKSOURCE_PCLK1;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
+    error_tag = 3;
     Error_Handler();
   }
 
@@ -275,6 +287,7 @@ static void MX_ADC_Init(void)
   hadc.Init.Overrun = ADC_OVR_DATA_PRESERVED;
   if (HAL_ADC_Init(&hadc) != HAL_OK)
   {
+    error_tag = 4;
     Error_Handler();
   }
 
@@ -285,6 +298,7 @@ static void MX_ADC_Init(void)
   sConfig.SamplingTime = ADC_SAMPLETIME_7CYCLES_5;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
   {
+    error_tag = 5;
     Error_Handler();
   }
 
@@ -293,6 +307,7 @@ static void MX_ADC_Init(void)
   sConfig.Channel = ADC_CHANNEL_9;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
   {
+    error_tag = 5;
     Error_Handler();
   }
   /* USER CODE BEGIN ADC_Init 2 */

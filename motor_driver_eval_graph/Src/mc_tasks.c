@@ -806,6 +806,9 @@ __attribute__((section (".ccmram")))
   * @retval int16_t It returns MC_NO_FAULTS if the FOC has been ended before
   *         next PWM Update event, MC_DURATION otherwise
   */
+static uint32_t count = 0; // debug variable
+bool FOCfault= 0; // debug variable
+
 inline uint16_t FOC_CurrControllerM1(void)
 {
   qd_t Iqd, Vqd;
@@ -827,7 +830,14 @@ inline uint16_t FOC_CurrControllerM1(void)
   Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
   RCM_ReadOngoingConv();
   hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);
+
+  if (hCodeError == MC_DURATION){
+	  FOCfault = true; // debug statement
+  }
+
   PWMC_CalcPhaseCurrentsEst(pwmcHandle[M1],Iqd, hElAngle);
+
+  count = count + 1;
 
   FOCVars[M1].Vqd = Vqd;
   FOCVars[M1].Iab = Iab;
