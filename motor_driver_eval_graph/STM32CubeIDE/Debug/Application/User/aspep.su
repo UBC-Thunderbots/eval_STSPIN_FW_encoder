@@ -1,9 +1,0 @@
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:179:6:ASPEP_start	8	static
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:207:6:ASPEP_sendBeacon	16	static,ignoring_inline_asm
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:251:6:ASPEP_sendPing	16	static,ignoring_inline_asm
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:285:6:ASPEP_getBuffer	8	static
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:404:9:ASPEP_sendPacket	24	static,ignoring_inline_asm
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:590:6:ASPEP_HWDataTransmittedIT	16	static,ignoring_inline_asm
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:668:10:ASPEP_RXframeProcess	56	static,ignoring_inline_asm
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:836:6:ASPEP_HWDataReceivedIT	16	static
-/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/aspep.c:924:6:ASPEP_HWDMAReset	8	static

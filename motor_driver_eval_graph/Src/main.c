@@ -55,8 +55,9 @@ DMA_HandleTypeDef hdma_usart1_rx;
 DMA_HandleTypeDef hdma_usart1_tx;
 
 /* USER CODE BEGIN PV */
-uint8_t TX_Buffer[] = {0x0, 0b11100111};
-uint8_t RX_Buffer[1] = {66};
+uint8_t TX_Buffer[] = {0b11100111};
+uint8_t RX_Buffer[] = {250};
+uint8_t previous_rx = 250;
 // uint8_t dataRec = 0x00;
 
 /* USER CODE END PV */
@@ -121,17 +122,20 @@ int main(void)
   MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
 
-  	MC_ProgramSpeedRampMotor1(1,0);
+  	/* MC_ProgramSpeedRampMotor1(250,1000);
 	MC_StartMotor1();
-	MC_ProgramSpeedRampMotor1(120, 1000);
+	HAL_Delay(2000);
+	MC_ProgramSpeedRampMotor1(500,1000);*/
+
+	// MC_ProgramSpeedRampMotor1(120, 1000);
+	/*HAL_Delay(5000);
+	MC_ProgramSpeedRampMotor1(-360, 3000);
 	HAL_Delay(5000);
 	MC_ProgramSpeedRampMotor1(360, 3000);
 	HAL_Delay(5000);
-	MC_ProgramSpeedRampMotor1(60, 2000);
-	HAL_Delay(5000);
 	MC_ProgramSpeedRampMotor1(0, 100);
 	MC_StopMotor1();
-	MC_ProgramSpeedRampMotor1(360, 3600);
+	MC_ProgramSpeedRampMotor1(360, 3600);*/
 
 	// HAL_SPI_Receive_IT(&hspi1, &dataRec, sizeof(dataRec));
 
@@ -141,13 +145,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  // HAL_SPI_TransmitReceive(&hspi1, TX_Buffer, RX_Buffer, sizeof(TX_Buffer), 3000);
+	  HAL_SPI_TransmitReceive(&hspi1, TX_Buffer, RX_Buffer, sizeof(TX_Buffer), HAL_MAX_DELAY);
 	  // HAL_SPI_Receive(&hspi1, RX_Buffer, sizeof(RX_Buffer), 1000);
 	  // HAL_SPI_Transmit(&hspi1, RX_Buffer, sizeof(RX_Buffer), 100);
 
-	  // TX_Buffer[0] = RX_Buffer[0];
 
-	  // HAL_Delay(100);
+	  // MC_ProgramSpeedRampMotor1(RX_Buffer[0], 500);
+
+
+	  TX_Buffer[0] = RX_Buffer[0];
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

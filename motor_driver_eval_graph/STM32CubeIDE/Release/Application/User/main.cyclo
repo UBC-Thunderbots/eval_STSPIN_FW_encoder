@@ -1,0 +1,4 @@
+/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/main.c:168:6:SystemClock_Config	4
+/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/main.c:89:5:main	15
+/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/main.c:561:6:HAL_SPI_RxCpltCallback	1
+/Users/msvc/Documents/code/tbots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/main.c:576:6:Error_Handler	1
