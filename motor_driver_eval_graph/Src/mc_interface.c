@@ -375,13 +375,13 @@ __weak bool MCI_StartMotor(MCI_Handle_t *pHandle)
       pHandle->DirectCommand = MCI_START;
       pHandle->CommandState = MCI_COMMAND_NOT_ALREADY_EXECUTED;
       retVal = true;
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
+//      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
     }
     else
     {
       /* Reject the command as the condition are not met */
     	if(MCI_GetSTMState(pHandle) == FAULT_NOW) {
-    		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+//    		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
     	}
     }
 #ifdef NULL_PTR_CHECK_MC_INT

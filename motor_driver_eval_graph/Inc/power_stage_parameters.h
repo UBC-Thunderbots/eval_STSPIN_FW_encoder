@@ -42,11 +42,11 @@
 /*** Topology ***/
 #define SINGLE_SHUNT_PHASE_SHIFT
 
-#define RSHUNT                        0.025
+#define RSHUNT                        0.015 // 0.025
 
 /*  ICSs gains in case of isolated current sensors,
         amplification gain for shunts based sensing */
-#define AMPLIFICATION_GAIN            3.33
+#define AMPLIFICATION_GAIN            29.1 // 3.33
 
 /*** Noise parameters ***/
 #define TNOISE_NS                     1200

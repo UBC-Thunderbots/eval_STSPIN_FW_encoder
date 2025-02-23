@@ -115,26 +115,28 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /*Configure GPIO pin Output Level */
- HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
+// HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);
 //  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
 
   bool ret = false;
+  volatile MCI_State_t state = MC_GetSTMStateMotor1();
+  volatile uint16_t faults = MC_GetOccurredFaultsMotor1();
 
-  MC_ProgramSpeedRampMotor1(120, 1000);
+  MC_ProgramSpeedRampMotor1(10, 2000);
   ret = MC_StartMotor1(); // This function only initiates the startup sequence, but the FSM in the background actually performs it.
-  if(ret == false) {
-	  // The start motor command was discarded
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // When testing, this pin did not go high, i.e. the start command was successful.
-  }
+//  if(ret == false) {
+//	  // The start motor command was discarded
+//	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // When testing, this pin did not go high, i.e. the start command was successful.
+//  }
 
-//  HAL_Delay(5000);
+// HAL_Delay(5000);
   /*MC_ProgramSpeedRampMotor1(360, 2000);
   HAL_Delay(10000);
   MC_ProgramSpeedRampMotor1(60, 2000);
   HAL_Delay(5000);
   MC_ProgramSpeedRampMotor1(0, 100);*/
 
-//  MC_StopMotor1();
+// MC_StopMotor1();
 //  MC_ProgramSpeedRampMotor1(360, 3600);
 
 	// HAL_SPI_Receive_IT(&hspi1, &dataRec, sizeof(dataRec));
@@ -143,6 +145,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
 
@@ -473,16 +476,16 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(M1_EN_DRIVER_GPIO_Port, &GPIO_InitStruct);
 
   /* Configure Test point GPIO pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_12;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Make sure mode is output PP not OD otherwise need external pull-up resistor.
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+//  GPIO_InitStruct.Pin = GPIO_PIN_12;
+//  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Make sure mode is output PP not OD otherwise need external pull-up resistor.
+//  GPIO_InitStruct.Pull = GPIO_NOPULL;
+//  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* Configure "motor start command returned false" test point GPIO pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_4;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+//  GPIO_InitStruct.Pin = GPIO_PIN_4;
+//  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+//  GPIO_InitStruct.Pull = GPIO_NOPULL;
+//  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* Configure FAULT test point GPIO pin */
 //  GPIO_InitStruct.Pin = GPIO_PIN_1;

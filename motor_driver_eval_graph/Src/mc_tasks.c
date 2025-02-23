@@ -808,6 +808,7 @@ __attribute__((section (".ccmram")))
   */
 inline uint16_t FOC_CurrControllerM1(void)
 {
+  static uint8_t count = 0;
   qd_t Iqd, Vqd;
   ab_t Iab;
   alphabeta_t Ialphabeta, Valphabeta;

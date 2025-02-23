@@ -12,7 +12,7 @@ C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_drive
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:825:20:MCI_GetSTMState	0	static
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:846:17:MCI_GetOccurredFaults	0	static
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:866:17:MCI_GetCurrentFaults	0	static
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:360:13:MCI_StartMotor	16	static
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:360:13:MCI_StartMotor	8	static
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:426:13:MCI_StartWithPolarizationMotor	8	static
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:471:13:MCI_StartOffsetMeasurments	8	static
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_interface.c:560:13:MCI_SetCalibratedOffsetsMotor	16	static

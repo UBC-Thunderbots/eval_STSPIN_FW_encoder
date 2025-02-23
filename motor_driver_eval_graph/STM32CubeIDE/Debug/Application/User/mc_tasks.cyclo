@@ -11,10 +11,10 @@ C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_drive
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:338:13:TSK_MediumFrequencyTaskM1	29
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:257:13:MC_Scheduler	7
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:747:16:TSK_HighFrequencyTask	3
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:872:13:TSK_SafetyTask_PWMOFF	5
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:847:13:TSK_SafetyTask	2
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:873:13:TSK_SafetyTask_PWMOFF	5
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:848:13:TSK_SafetyTask	2
 C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:220:13:MC_RunMotorControlTasks	2
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:937:22:GetMCI	2
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:957:13:TSK_HardwareFaultTask	1
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:970:13:UI_HandleStartStopButton_cb	2
-C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:988:13:mc_lock_pins	1
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:938:22:GetMCI	2
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:958:13:TSK_HardwareFaultTask	1
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:971:13:UI_HandleStartStopButton_cb	2
+C:/Users/tarak/OneDrive/Documents/ThunderBots/eval_STSPIN_FW_encoder/motor_driver_eval_graph/Src/mc_tasks.c:989:13:mc_lock_pins	1
