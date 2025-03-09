@@ -50,7 +50,7 @@
 /**************************    DRIVE SETTINGS SECTION   **********************/
 /* PWM generation and current reading */
 
-#define PWM_FREQUENCY   13100
+#define PWM_FREQUENCY   10200
 #define PWM_FREQ_SCALING 1
 
 #define LOW_SIDE_SIGNALS_ENABLING        LS_PWM_TIMER
@@ -59,7 +59,7 @@
                                                            signals are enabled */
 
 /* Torque and flux regulation loops */
-#define REGULATION_EXECUTION_RATE     1    /*!< FOC execution rate in
+#define REGULATION_EXECUTION_RATE     2    /*!< FOC execution rate in
                                                            number of PWM cycles */
 
 #define ISR_FREQUENCY_HZ (PWM_FREQUENCY/REGULATION_EXECUTION_RATE) /*!< @brief FOC execution rate in
@@ -110,9 +110,9 @@
 #define DEFAULT_FLUX_COMPONENT_A         0
 
 /**************************    FIRMWARE PROTECTIONS SECTION   *****************/
-#define OV_VOLTAGE_THRESHOLD_V          9000 /*!< Over-voltage
+#define OV_VOLTAGE_THRESHOLD_V          29 /*!< Over-voltage
                                                          threshold */
-#define UD_VOLTAGE_THRESHOLD_V          20 /*!< Under-voltage
+#define UD_VOLTAGE_THRESHOLD_V         10 /*!< Under-voltage
                                                           threshold */
 #ifdef NOT_IMPLEMENTED
 
