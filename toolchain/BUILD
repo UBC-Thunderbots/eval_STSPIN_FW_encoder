@@ -1,10 +1,7 @@
 load("@rules_cc//cc:defs.bzl", "cc_toolchain")
 load("@bazel_tools//tools/cpp:unix_cc_toolchain_config.bzl", "cc_toolchain_config")
 
-filegroup(
-    name = "empty",
-    srcs = [],
-)
+filegroup(name = "empty")
 
 filegroup(
     name = "arm_none_eabi_files",
@@ -32,22 +29,27 @@ cc_toolchain_config(
         "strip": "arm-none-eabi-strip",
     },
     compile_flags = [
-        "-mcpu=cortex-m4",
+        "-mcpu=cortex-m0",
+        "-std=gnu11",
+        "-DARM_MATH_CM0",
+        "-DUSE_HAL_DRIVER",
+        "-DSTM32F031x6",
+        "-fstack-usage",
         "-mthumb",
-        "-mfloat-abi=hard",
-        "-mfpu=fpv4-sp-d16",
+        "-mfloat-abi=soft",
         "-ffunction-sections",
         "-fdata-sections",
         "-fno-exceptions",
         "-fno-rtti",
+        "-Wall",
     ],
     link_flags = [
-        "-mcpu=cortex-m4",
+        "-mcpu=cortex-m0",
         "-mthumb",
-        "-mfloat-abi=hard",
-        "-mfpu=fpv4-sp-d16",
-        "-specs=nano.specs",
+        "-mfloat-abi=soft",
+        "-specs=nosys.specs",
         "-Wl,--gc-sections",
+        "-Wl,-Map=motor_driver_eval_graph.map"
     ],
     cxx_flags = [
         "-fno-exceptions",
@@ -67,19 +69,17 @@ cc_toolchain(
     objcopy_files = ":empty",
     strip_files = ":empty",
     supports_param_files = 0,
+    visibility = ["//visibility:public"]
 )
 
 toolchain(
     name = "arm_none_eabi_toolchain_definition",
-    exec_compatible_with = [
-        "@platforms//cpu:x86_64",
-        "@platforms//os:linux",
-    ],
     target_compatible_with = [
         "@platforms//cpu:arm",
         "@platforms//os:none",
     ],
     toolchain = ":arm_none_eabi_toolchain",
     toolchain_type = "@bazel_tools//tools/cpp:toolchain_type",
+    visibility = ["//visibility:public"],
 )
 
