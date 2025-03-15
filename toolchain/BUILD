@@ -1,6 +1,14 @@
 load("@rules_cc//cc:defs.bzl", "cc_toolchain")
 load("@bazel_tools//tools/cpp:unix_cc_toolchain_config.bzl", "cc_toolchain_config")
 
+platform(
+    name = "motordriver_firmware",
+    constraint_values = [
+        "@platforms//cpu:armv6-m",
+        "@platforms//os:none",
+    ]
+)
+
 filegroup(name = "empty")
 
 filegroup(
@@ -11,7 +19,7 @@ filegroup(
 cc_toolchain_config(
     name = "arm_none_eabi_config",
     cpu = "arm",
-    compiler = "gcc",
+    compiler = "arm-none-eabi-gcc",
     toolchain_identifier = "arm-none-eabi",
     host_system_name = "local",
     target_system_name = "arm-none-eabi",
@@ -21,7 +29,7 @@ cc_toolchain_config(
     tool_paths = {
         "gcc": "arm-none-eabi-gcc",
         "ar": "arm-none-eabi-ar",
-        "ld": "arm-none-eabi-ld",
+        "ld": "arm-none-eabi-ld", # this should probably by -gcc but i'll figure this out later
         "cpp": "arm-none-eabi-cpp",
         "gcov": "arm-none-eabi-gcov",
         "nm": "arm-none-eabi-nm",
@@ -75,7 +83,7 @@ cc_toolchain(
 toolchain(
     name = "arm_none_eabi_toolchain_definition",
     target_compatible_with = [
-        "@platforms//cpu:arm",
+        "@platforms//cpu:armv6-m",
         "@platforms//os:none",
     ],
     toolchain = ":arm_none_eabi_toolchain",

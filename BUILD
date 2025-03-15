@@ -17,5 +17,4 @@ cc_binary(
         "-I./Drivers/CMSIS/DSP/Include",
     ],
     linkopts = ["-TSTM32F031C6TX_FLASH.ld"],
-    toolchains = ["//toolchain:arm_none_eabi_toolchain"]
 )
