@@ -3,28 +3,34 @@ workspace(name = "mdfw_workspace")
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 git_repository(
-    name = "bazel_embedded",
-    commit = "d3cbe4eff9a63d3dee63067d61096d681daca33b",
-    remote = "https://github.com/bazelembedded/bazel-embedded.git",
-    shallow_since = "1585022166 +0800",
+    name = "rules_cc",
+    remote = "https://github.com/bazelbuild/rules_cc",
+    branch = "main",
 )
 
-load("@bazel_embedded//:bazel_embedded_deps.bzl", "bazel_embedded_deps")
-
-bazel_embedded_deps()
-
-load("@bazel_embedded//platforms:execution_platforms.bzl", "register_platforms")
-
-register_platforms()
-
-load(
-    "@bazel_embedded//toolchains/compilers/gcc_arm_none_eabi:gcc_arm_none_repository.bzl",
-    "gcc_arm_none_compiler",
+git_repository(
+    name = "arm_none_eabi",
+    remote = "https://github.com/hexdae/toolchains_arm_gnu",
+    branch = "master",
 )
 
-gcc_arm_none_compiler()
+load("@toolchains_arm_gnu//:deps.bzl", "arm_none_eabi_deps")
+arm_none_eabi_deps()
+register_toolchains("@arm_none_eabi//toolchain:all")
 
-load("@bazel_embedded//toolchains/gcc_arm_none_eabi:gcc_arm_none_toolchain.bzl", "register_gcc_arm_none_toolchain")
+load("@toolchains_arm_gnu//:deps.bzl", "arm_none_linux_gnueabihf_deps")
+arm_none_linux_gnueabihf_deps()
+register_toolchains("@arm_none_linux_gnueabihf//toolchain:all")
 
-register_gcc_arm_none_toolchain()
+load("@toolchains_arm_gnu//:deps.bzl", "aarch64_none_elf_deps")
+aarch64_none_elf_deps()
+register_toolchains("@aarch64_none_elf//toolchain:all")
+
+load("@toolchains_arm_gnu//:deps.bzl", "aarch64_none_linux_gnu_deps")
+aarch64_none_linux_gnu_deps()
+register_toolchains("@aarch64_none_linux_gnu//toolchain:all")
+
+register_toolchains(
+    "//toolchain:arm_none_eabi_toolchain_definition",
+)
 
